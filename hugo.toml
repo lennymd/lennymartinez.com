@@ -54,8 +54,12 @@ weight = 30
 disableXML = true
 
 [imaging]
-quality = 85
 resampleFilter = 'Lanczos'
+[imaging.jpeg]
+quality = 85
+[imaging.webp]
+quality = 80
+
 
 [markup]
 [markup.goldmark]
