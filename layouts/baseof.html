@@ -47,7 +47,7 @@
       <div class="site-identity">
         <a href="/" class="site-title">{{ site.Title }}</a>
       </div>
-      <p class="site-bio">{{ site.Params.currentTag | markdownify }}</p>
+      <p class="site-short-bio">{{ site.Params.shortBio | markdownify }}</p>
       <nav class="site-nav" aria-label="Primary">
         &#8594;
         {{ range $i, $e := site.Menus.main }}
