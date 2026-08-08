@@ -5,12 +5,12 @@
 
 
     <ul class="work-list">
-    {{ range where (where .Site.RegularPages "Section" "projects") "Params.featured" true }}
-      <li>
-        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-        <span class="year">({{ .Date.Year }})</span>
-      </li>
-    {{ end }}
+      {{ range where (where .Site.RegularPages "Section" "projects") "Params.featured" true }}
+        <li>
+          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+          <span class="year">({{ .Date.Year }})</span>
+        </li>
+      {{ end }}
     </ul>
 
     <div class="update-notice">
