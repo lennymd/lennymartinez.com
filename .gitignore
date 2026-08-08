@@ -17,5 +17,5 @@ hugo.linux
 /.hugo_build.lock
 
 # Reference only
-old-version/
+/old-version/
 BUILD-PLAN.md
