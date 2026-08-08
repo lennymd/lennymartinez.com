@@ -1,0 +1,9 @@
+{{ define "main" }}
+  <article class="prose">
+    <h1>{{ .Title }}</h1>
+    {{ .Content }}
+
+    {{ partial "project-list.html" . }}
+    {{ partial "update-notice.html" . }}
+  </article>
+{{ end }}
