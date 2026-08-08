@@ -8,7 +8,7 @@
     {{ with (index .Params "head-image") }}
       {{ $img := resources.Get (printf "img/projects/%s" .) }}
       {{ if $img }}
-        {{ $w := $img.Resize "1400x webp lossless" }}
+        {{ $w := $img.Resize "1400x webp" }}
         <figure class="hero">
           <img
             src="{{ $w.RelPermalink }}"
