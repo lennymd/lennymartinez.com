@@ -1,0 +1,31 @@
+{{ $res := resources.Get .Destination }}
+{{ if $res }}
+  {{ $alt   := .Text | default "" }}
+  {{ $class := "" }}
+  {{ with .Attributes.class }}{{ $class = . }}{{ end }}
+  {{ if eq $res.MediaType.SubType "png" }}
+    {{ $webp := $res.Resize "800x webp lossless" }}
+    <img
+      src="{{ $webp.RelPermalink }}"
+      loading="lazy"
+      decoding="async"
+      width="{{ $webp.Width }}"
+      height="{{ $webp.Height }}"
+      alt="{{ $alt }}"
+      {{ with $class }}class="{{ . }}"{{ end }}
+    />
+  {{ else }}
+    {{ $webp := $res.Resize "800x webp q85" }}
+    <img
+      src="{{ $webp.RelPermalink }}"
+      loading="lazy"
+      decoding="async"
+      width="{{ $webp.Width }}"
+      height="{{ $webp.Height }}"
+      alt="{{ $alt }}"
+      {{ with $class }}class="{{ . }}"{{ end }}
+    />
+  {{ end }}
+{{ else }}
+  <img src="{{ .Destination }}" alt="{{ .Text }}" />
+{{ end }}

@@ -1,0 +1,27 @@
+{{ define "main" }}
+  <article class="prose">
+    <hgroup>
+      <h1>{{ .Title }}</h1>
+      <p class="meta">{{ .Date.Format "2006" }}</p>
+    </hgroup>
+
+    {{ with (index .Params "head-image") }}
+      {{ $img := resources.Get (printf "img/projects/%s" .) }}
+      {{ if $img }}
+        {{ $w := $img.Resize "1400x webp lossless" }}
+        <figure class="hero">
+          <img
+            src="{{ $w.RelPermalink }}"
+            width="{{ $w.Width }}"
+            height="{{ $w.Height }}"
+            alt="{{ index $.Params "head-image-alt" }}"
+            loading="eager"
+            decoding="async"
+          />
+        </figure>
+      {{ end }}
+    {{ end }}
+
+    {{ .Content }}
+  </article>
+{{ end }}
