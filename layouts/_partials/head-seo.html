@@ -8,6 +8,10 @@
   {{- end -}}
 {{- end -}}
 
+{{- $ogType := cond .IsPage "article" "website" -}}
+{{- $twCard := "summary" -}}
+{{- with $og }}{{ $twCard = "summary_large_image" }}{{ end -}}
+
 {{- with $desc }}
   <meta name="description" content="{{ . }}" />
 {{- end }}
@@ -27,14 +31,7 @@
 <meta property="og:site_name" content="{{ site.Title }}" />
 <meta property="og:title" content="{{ or .Title site.Title }}" />
 <meta property="og:url" content="{{ .Permalink }}" />
-<meta
-  property="og:type"
-  content="{{ if .IsPage }}
-    article
-  {{ else }}
-    website
-  {{ end }}"
-/>
+<meta property="og:type" content="{{ $ogType }}" />
 <meta
   property="og:locale"
   content="{{ replace site.Language.Locale `-` `_` }}"
@@ -62,14 +59,7 @@
 {{- end }}
 
 {{/* ---------- Twitter / X ---------- */}}
-<meta
-  name="twitter:card"
-  content="{{ with $og }}
-    summary_large_image
-  {{ else }}
-    summary
-  {{ end }}"
-/>
+<meta name="twitter:card" content="{{ $twCard }}" />
 <meta name="twitter:title" content="{{ or .Title site.Title }}" />
 {{- with $desc }}
   <meta name="twitter:description" content="{{ . }}" />
