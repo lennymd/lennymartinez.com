@@ -1,0 +1,22 @@
+{
+  "name": "{{ site.Title }}",
+  "short_name": "{{ site.Title }}",
+  "id": "{{ site.Home.Permalink }}",
+  "start_url": "{{ site.Home.RelPermalink }}",
+  "scope": "{{ site.Home.RelPermalink }}",
+  "display": "standalone",
+  "theme_color": "{{ site.Params.meta.themeColor }}",
+  "background_color": "{{ site.Params.meta.backgroundColor }}",
+  "icons": [
+    {
+      "src": "{{ "favicon/android-chrome-192x192.png" | relURL }}",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "{{ "favicon/android-chrome-512x512.png" | relURL }}",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

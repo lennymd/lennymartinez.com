@@ -12,6 +12,7 @@ images = ['img/lennymartinez.jpg']
 
 [params.meta]
 themeColor = '#de1207'
+backgroundColor = '#ffffff'
 ogImageAlt = 'Lenny Martinez'
 
 [[params.social]]
