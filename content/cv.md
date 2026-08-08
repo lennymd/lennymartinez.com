@@ -1,7 +1,9 @@
 +++
-title = "Teaching & Service"
+title = "CV"
 draft = false
 +++
+
+My full CV is coming soon.
 
 ## Teaching
 
