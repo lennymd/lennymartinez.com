@@ -5,8 +5,8 @@
       <p class="meta">{{ .Date.Format "2006" }}</p>
     </hgroup>
 
-    {{ with (index .Params "head-image") }}
-      {{ $img := resources.Get (printf "img/projects/%s" .) }}
+    {{ with .Params.headImage }}
+      {{ $img := resources.Get . }}
       {{ if $img }}
         {{ $w := $img.Resize "1400x webp" }}
         <figure class="hero">
@@ -14,7 +14,7 @@
             src="{{ $w.RelPermalink }}"
             width="{{ $w.Width }}"
             height="{{ $w.Height }}"
-            alt="{{ index $.Params "head-image-alt" }}"
+            alt="{{ $.Params.headImageAlt }}"
             loading="eager"
             decoding="async"
           />

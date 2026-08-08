@@ -2,8 +2,8 @@
 date = '2021-08-01'
 draft = true
 title = 'PCORI Evidence Map'
-head-image = "pcori/pcori-1.png"
-head-image-alt = "Screenshot of the Evidence Map interface."
+headImage = "img/projects/pcori/pcori-1.png"
+headImageAlt = "Screenshot of the Evidence Map interface."
 +++
 
 This project was a collaboration between the [University of Miami's School of Communication](https://com.miami.edu/) (Where I was teaching at the time), [MDB, Inc.](https://www.michaeldbaker.com/), and [RTI International](https://www.rti.org/), for the [Patient-Centered Outcomes Research Institute (PCORI)](https://www.pcori.org/).

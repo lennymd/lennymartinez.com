@@ -2,8 +2,6 @@
 date = '2024-09-08'
 draft = true
 title = 'Speculating AI Summer School'
-head-image = ""
-head-image-alt = ""
 +++
 
 Use the pictures from the event to organize things
