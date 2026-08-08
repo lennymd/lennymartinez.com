@@ -46,8 +46,8 @@ name = "Projects"
 pageRef = "/projects"
 weight = 20
 [[menu.main]]
-name = "Teaching"
-pageRef = "/teaching"
+name = "CV"
+pageRef = "/CV"
 weight = 30
 
 [minify]
