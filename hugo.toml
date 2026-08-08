@@ -12,7 +12,7 @@ images = ['img/lennymartinez.jpg']
 
 [params.meta]
 themeColor = '#f9423a'
-backgroundColor = '#fdfcf8'
+backgroundColor = '#ffffff'
 ogImageAlt = 'Lenny Martinez'
 
 [[params.social]]
@@ -52,6 +52,10 @@ weight = 30
 
 [minify]
 disableXML = true
+
+[imaging]
+quality = 85
+resampleFilter = 'Lanczos'
 
 [markup]
 [markup.goldmark]
