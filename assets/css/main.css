@@ -1,5 +1,4 @@
 /*  Fonts */
-
 @font-face {
   font-family: 'AT Hauss';
   src:
@@ -69,13 +68,14 @@
   --weight-bold: 600;
   --weight-display: 800;
 
-  --color-bg: #fff;
-  --color-link: #de1207;
-  --color-text: #100f0f;
-  --color-text-muted: #6f6e69;
+  --color-bg: #1a1a1a;
+  --color-link: #d49f50;
+  --color-text: #e8e6e1;
+  --color-text-muted: #9a958b;
+  --color-border: #4a4133;
 
   --font-size-base: 1.125rem;
-  --font-size-meta: 0.875rem;
+  --font-size-meta: 1rem;
   --lh-base: 1.5;
   --lh-tight: 1.15;
   --lh-snug: 1.25;
@@ -240,6 +240,7 @@ header {
 
 .site-nav {
   margin-top: 0.75rem;
+  font-size: var(--font-size-base);
 }
 
 .site-nav a {
@@ -304,7 +305,7 @@ footer {
 
 .hero {
   margin-top: 2rem;
-  margin-bottom: 2.5rem;
+  margin-bottom: 1rem;
 }
 
 /*  Pages */
@@ -329,7 +330,7 @@ footer {
   margin-block: 2rem;
 }
 .year-section + .year-section {
-  border-top: 1px solid #e4e4e2;
+  border-top: 1px solid var(--color-border);
   padding-top: 2rem;
 }
 
