@@ -12,8 +12,8 @@ contactEmail = "lenny.martinez@isir.upmc.fr"
 images = ['img/lennymartinez.jpg']
 
 [params.meta]
-themeColor = '#de1207'
-backgroundColor = '#ffffff'
+themeColor = '#d49f50'
+backgroundColor = '#1a1a1a'
 ogImageAlt = 'Lenny Martinez'
 
 [[params.social]]
