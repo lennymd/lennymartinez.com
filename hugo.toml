@@ -6,9 +6,9 @@ disableKinds = ['taxonomy', 'term']
 enableRobotsTXT = true
 
 [params]
-description = "Hey!👋🏽 I'm Lenny Martinez, a designer and researcher. I'm currently working on my PhD in Human-Computer Interaction at ISIR in Paris, France."
-shortBio = "PhD Candidate at [ISIR](https://www.isir.upmc.fr/)."
-contactEmail = "lenny.martinez@isir.upmc.fr"
+description = '''Hey!👋🏽 I'm Lenny Martinez, a designer and researcher. I'm currently working on my PhD in Human-Computer Interaction at ISIR in Paris, France.'''
+shortBio = '''PhD Candidate at [ISIR](https://www.isir.upmc.fr/).'''
+contactEmail = 'lenny.martinez@isir.upmc.fr'
 images = ['img/lennymartinez.jpg']
 
 [params.meta]
@@ -39,16 +39,16 @@ inFooter = false
 
 [menu]
 [[menu.main]]
-name = "Home"
-pageRef = "/"
+name = 'Home'
+pageRef = '/'
 weight = 10
 [[menu.main]]
-name = "Projects"
-pageRef = "/projects"
+name = 'Projects'
+pageRef = '/projects'
 weight = 20
 [[menu.main]]
-name = "CV"
-pageRef = "/CV"
+name = 'CV'
+pageRef = '/CV'
 weight = 30
 
 [minify]
