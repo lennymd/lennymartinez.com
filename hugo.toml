@@ -1,18 +1,40 @@
 baseURL = 'https://lennymartinez.com/'
-languageCode = 'en-US'
 title = 'Lenny Martinez'
-
-defaultContentLanguage = "en"
-disableKinds = ["taxonomy", "term"]
+locale = 'en-US'
+defaultContentLanguage = 'en'
+disableKinds = ['taxonomy', 'term']
 
 [params]
-currentTag = "PhD Candidate at [ISIR](https://www.isir.upmc.fr/)."
 description = "Hey!👋🏽 I'm Lenny Martinez, a designer and researcher. I'm currently working on my PhD in Human-Computer Interaction at ISIR in Paris, France."
+shortBio = "PhD Candidate at [ISIR](https://www.isir.upmc.fr/)."
 contactEmail = "lenny.martinez@isir.upmc.fr"
-github = "https://github.com/lennymd"
-instagram = "https://instagram.com/lennyisnoticing"
-linkedin = "https://www.linkedin.com/in/lennymartinezd/"
-scholar = "https://scholar.google.com/citations?hl=en&user=sEuQs7wAAAAJ"
+images = ['img/lennymartinez.jpg']
+
+[params.meta]
+themeColor = '#f9423a'
+backgroundColor = '#fdfcf8'
+ogImageAlt = 'Lenny Martinez'
+
+[[params.social]]
+name = 'Instagram'
+url = 'https://instagram.com/lennyisnoticing'
+inFooter = true
+
+[[params.social]]
+name = 'LinkedIn'
+url = 'https://www.linkedin.com/in/lennymartinezd/'
+inFooter = true
+
+[[params.social]]
+name = 'GitHub'
+url = 'https://github.com/lennymd'
+inFooter = true
+
+[[params.social]]
+name = 'Google Scholar'
+url = 'https://scholar.google.com/citations?hl=en&user=sEuQs7wAAAAJ'
+inFooter = false
+
 
 [menu]
 [[menu.main]]
@@ -30,10 +52,6 @@ weight = 30
 
 [minify]
 disableXML = true
-[minify.tdewolff]
-[minify.tdewolff.html]
-keepWhitespace = false
-keepComments = false
 
 [markup]
 [markup.goldmark]
