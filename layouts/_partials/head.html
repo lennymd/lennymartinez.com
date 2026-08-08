@@ -1,0 +1,52 @@
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<title>
+  {{ if .IsHome }}
+    {{ site.Title }}
+  {{ else }}
+    {{ .Title }} ·
+    {{ site.Title }}
+  {{ end }}
+
+</title>
+
+{{ partial "head-seo.html" . }}
+
+{{- with site.Params.meta.themeColor }}
+  <meta name="theme-color" content="{{ . }}" />
+{{- end }}
+
+
+<link
+  rel="icon"
+  type="image/svg+xml"
+  href="{{ "favicon/lennymartinez.svg" | relURL }}"
+/>
+<link
+  rel="icon"
+  type="image/png"
+  sizes="32x32"
+  href="{{ "favicon/favicon-32x32.png" | relURL }}"
+/>
+<link
+  rel="icon"
+  type="image/png"
+  sizes="16x16"
+  href="{{ "favicon/favicon-16x16.png" | relURL }}"
+/>
+<link rel="icon" href="{{ "favicon/favicon.ico" | relURL }}" sizes="any" />
+<link
+  rel="apple-touch-icon"
+  sizes="180x180"
+  href="{{ "favicon/apple-touch-icon.png" | relURL }}"
+/>
+<link rel="manifest" href="{{ "favicon/site.webmanifest" | relURL }}" />
+
+{{- with resources.Get "css/main.css" | minify | fingerprint }}
+  <link
+    rel="stylesheet"
+    href="{{ .RelPermalink }}"
+    integrity="{{ .Data.Integrity }}"
+  />
+{{- end }}

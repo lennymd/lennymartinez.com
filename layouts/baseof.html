@@ -4,54 +4,21 @@
   dir="{{ or site.Language.Direction `ltr` }}"
 >
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="{{ site.Params.description }}" />
-    <meta property="og:description" content="{{ site.Params.description }}" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="{{ site.Title }}" />
-    <meta property="og:url" content="{{ .Permalink }}" />
-    <meta property="og:image" content="{{ "lennymartinez.jpg" | absURL }}" />
+    {{ partial "head.html" . }}
 
-    <!-- favicons -->
-    <link rel="icon" type="image/svg+xml" href="/lennymartinez.svg" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="/favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="/favicon/favicon-16x16.png"
-    />
-    <link rel="icon" href="/favicon/favicon.ico" sizes="any" />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="/favicon/apple-touch-icon.png"
-    />
-    <link rel="manifest" href="/favicon/site.webmanifest" />
-
-    <title>
-      {{ site.Title }}
-    </title>
-
-    {{ $style := resources.Get "css/main.css" | minify | fingerprint }}
-    <link rel="stylesheet" href="{{ $style.RelPermalink }}" />
   </head>
   <body>
     <header>
       <div class="site-identity">
-        <a href="/" class="site-title">{{ site.Title }}</a>
+        <a href="{{ site.Home.RelPermalink }}" class="site-title"
+          >{{ site.Title }}</a
+        >
       </div>
       <p class="site-short-bio">{{ site.Params.shortBio | markdownify }}</p>
       <nav class="site-nav" aria-label="Primary">
-        &#8594;
+        <span aria-hidden="true">&#8594;</span>
         {{ range $i, $e := site.Menus.main }}
-          {{ if $i }}/{{ end }}
+          {{ if $i }}<span aria-hidden="true">/</span>{{ end }}
           <a
             href="{{ $e.URL }}"
             {{ if $.IsMenuCurrent "main" $e }}
@@ -69,25 +36,12 @@
         <a href="mailto: {{ site.Params.contactEmail }}"
           >{{ site.Params.contactEmail }}</a
         >.<br />
+        {{- $out := slice }}
+        {{- range where site.Params.social "inFooter" true }}
+          {{- $out = $out | append (printf `<a href=%q >%s</a>` .url .name) }}
+        {{- end }}
         Sometimes I share my work on
-        <a
-          href="{{ site.Params.instagram }}"
-          target="_blank"
-          rel="noopener noreferrer"
-          >Instagram</a
-        >,
-        <a
-          href="{{ site.Params.linkedin }}"
-          target="_blank"
-          rel="noopener noreferrer"
-          >LinkedIn</a
-        >, and
-        <a
-          href="{{ site.Params.github }}"
-          target="_blank"
-          rel="noopener noreferrer"
-          >GitHub</a
-        >.
+        {{ delimit $out ", " ", and " | safeHTML }}.
       </p>
     </footer>
   </body>
