@@ -4,7 +4,7 @@
 {{- with or .Params.images site.Params.images -}}
   {{- $path := index . 0 -}}
   {{- with or ($.Resources.GetMatch $path) (resources.Get $path) -}}
-    {{- $og = .Fill "1200x630 Smart" -}}
+    {{- $og = .Resize "1200x" -}}
   {{- end -}}
 {{- end -}}
 
