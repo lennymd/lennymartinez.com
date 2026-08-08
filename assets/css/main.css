@@ -1,1 +1,406 @@
-/*  ADD CSS HERE */
+/*  Fonts */
+
+@font-face {
+  font-family: 'AT Hauss';
+  src:
+    url('/fonts/athauss/files/AtHauss-Regular.woff2') format('woff2'),
+    url('/fonts/athauss/files/AtHauss-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'AT Hauss';
+  src:
+    url('/fonts/athauss/files/AtHauss-RegularItalic.woff2') format('woff2'),
+    url('/fonts/athauss/files/AtHauss-RegularItalic.woff') format('woff');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'AT Hauss';
+  src:
+    url('/fonts/athauss/files/AtHauss-Semibold.woff2') format('woff2'),
+    url('/fonts/athauss/files/AtHauss-Semibold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'AT Hauss';
+  src:
+    url('/fonts/athauss/files/AtHauss-SemiboldItalic.woff2') format('woff2'),
+    url('/fonts/athauss/files/AtHauss-SemiboldItalic.woff') format('woff');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'AT Hauss';
+  src:
+    url('/fonts/athauss/files/AtHauss-Black.woff2') format('woff2'),
+    url('/fonts/athauss/files/AtHauss-Black.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'AT Hauss';
+  src:
+    url('/fonts/athauss/files/AtHauss-BlackItalic.woff2') format('woff2'),
+    url('/fonts/athauss/files/AtHauss-BlackItalic.woff') format('woff');
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Variables */
+
+:root {
+  --font-sans: 'AT Hauss', system-ui, sans-serif;
+
+  --weight-base: 400;
+  --weight-bold: 600;
+  --weight-display: 800;
+
+  --color-bg: #fff;
+  --color-link: #de1207;
+  --color-text: #100f0f;
+  --color-text-muted: #6f6e69;
+
+  --font-size-base: 1.125rem;
+  --font-size-meta: 0.875rem;
+  --lh-base: 1.5;
+  --lh-tight: 1.15;
+  --lh-snug: 1.25;
+
+  --width-content: 42rem;
+  --width-wide: 60rem;
+  --width-page: 90rem;
+  --gutter: 1.5rem;
+}
+
+/* Reset */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Base */
+
+body {
+  font-family: var(--font-sans);
+  font-weight: var(--weight-base);
+  font-size: var(--font-size-base);
+  line-height: var(--lh-base);
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  max-width: var(--width-page);
+  margin-inline: auto;
+  padding: 2rem var(--gutter);
+  overscroll-behavior: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Links */
+
+a {
+  color: var(--color-link);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  padding: 0 0.15em;
+  margin: 0 -0.15em;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+  transition:
+    background-color 120ms ease,
+    color 120ms ease;
+
+  &:hover {
+    background: var(--color-link);
+    color: var(--color-bg);
+    text-decoration-color: transparent;
+  }
+}
+
+/* Typography */
+
+strong,
+b {
+  font-weight: var(--weight-bold);
+}
+
+p {
+  margin-bottom: 1rem;
+  text-wrap: pretty;
+}
+
+h1 {
+  font-size: clamp(1.9rem, 1.5rem + 1.8vw, 2.5rem);
+  font-weight: var(--weight-base);
+  line-height: var(--lh-tight);
+  letter-spacing: -0.021em;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  text-wrap: balance;
+}
+
+h2 {
+  font-size: clamp(1.35rem, 1.25rem + 0.4vw, 1.6rem);
+  font-weight: var(--weight-display);
+  line-height: var(--lh-snug);
+  letter-spacing: -0.012em;
+  color: var(--color-text-muted);
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  text-wrap: balance;
+}
+
+h3 {
+  font-size: var(--font-size-meta);
+  font-weight: var(--weight-bold);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  line-height: var(--lh-snug);
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Layout */
+
+header > *,
+footer > * {
+  max-width: var(--width-content);
+  margin-inline: auto;
+}
+
+.prose {
+  > * {
+    max-width: var(--width-content);
+    margin-inline: auto;
+  }
+
+  > figure,
+  > img {
+    max-width: clamp(var(--width-content), 75vw, var(--width-wide));
+  }
+
+  ul,
+  ol {
+    padding-left: 1.5rem;
+  }
+
+  li {
+    margin-bottom: 0.25rem;
+    text-wrap: pretty;
+  }
+}
+
+figure {
+  margin-bottom: 1rem;
+}
+
+header {
+  margin-bottom: 2rem;
+}
+
+.site-title {
+  color: var(--color-text);
+  text-decoration: none;
+  font-weight: var(--weight-bold);
+  letter-spacing: -0.012em;
+
+  &:hover {
+    background: var(--color-link);
+    color: var(--color-bg);
+  }
+}
+
+.site-short-bio {
+  margin-bottom: 0;
+}
+
+.site-nav {
+  margin-top: 0.75rem;
+}
+
+.site-nav a {
+  color: var(--color-text-muted);
+  text-decoration: none;
+  &:hover {
+    background: var(--color-link);
+    color: var(--color-bg);
+  }
+}
+
+.site-nav a[aria-current='page'] {
+  color: var(--color-text);
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-decoration-color: var(--color-text);
+  text-underline-offset: 4px;
+  &:hover {
+    background: var(--color-link);
+    color: var(--color-bg);
+    text-decoration-color: transparent;
+  }
+}
+
+footer {
+  max-width: var(--width-content);
+  margin-inline: auto;
+  margin-top: 3rem;
+}
+
+/* Components */
+
+.button {
+  display: inline-block;
+  padding: 0.5em 1em;
+  margin: 0;
+  border: 2px solid var(--color-link);
+  color: var(--color-link);
+  text-decoration: none;
+  font-size: var(--font-size-meta);
+  font-weight: var(--weight-bold);
+  transition:
+    background-color 120ms ease,
+    color 120ms ease;
+
+  &:hover {
+    background: var(--color-link);
+    color: var(--color-bg);
+  }
+}
+
+.update-notice {
+  border-left: 3px solid var(--color-link);
+  margin-top: calc(var(--gutter) * 2);
+  padding-left: var(--gutter);
+  text-wrap: pretty;
+
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.hero {
+  margin-top: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+/*  Pages */
+
+/* Home — featured project list */
+.index {
+  margin-bottom: 1rem;
+
+  li {
+    margin-bottom: 0.4rem;
+  }
+}
+
+.year {
+  color: var(--color-text-muted);
+  font-size: var(--font-size-meta);
+  white-space: nowrap;
+}
+
+/*  Projects — year-grouped archive */
+.year-section {
+  margin-block: 2rem;
+}
+.year-section + .year-section {
+  border-top: 1px solid #e4e4e2;
+  padding-top: 2rem;
+}
+
+.year-label {
+  font-size: var(--font-size-meta);
+  font-weight: var(--weight-base);
+  color: var(--color-text-muted);
+  letter-spacing: normal;
+  margin-top: 0;
+  margin-bottom: 0.25rem;
+}
+.prose .work-list {
+  list-style: none;
+  padding-left: 0;
+
+  li {
+    margin-bottom: 0.4rem;
+  }
+
+  a {
+    color: var(--color-text);
+    text-decoration-color: var(--color-text-muted);
+
+    &:hover {
+      background: var(--color-link);
+      color: var(--color-bg);
+      text-decoration-color: transparent;
+    }
+  }
+}
+
+/* Project page — title block */
+hgroup {
+  margin-bottom: 2rem;
+
+  > h1 {
+    margin-bottom: 0.25rem;
+  }
+}
+
+.meta {
+  color: var(--color-text-muted);
+  font-size: var(--font-size-meta);
+  margin-bottom: 0;
+}
+
+/* Accents */
+
+::selection {
+  background: var(--color-link);
+  color: var(--color-bg);
+}
+
+mark {
+  background: var(--color-link);
+  color: var(--color-bg);
+  padding: 0 0.15em;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-link);
+  outline-offset: 2px;
+}
+
+/* Media queries */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}

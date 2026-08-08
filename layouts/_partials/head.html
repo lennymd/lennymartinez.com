@@ -39,10 +39,12 @@
 />
 <link rel="manifest" href="{{ "favicon/site.webmanifest" | relURL }}" />
 
-{{- with resources.Get "css/main.css" | minify | fingerprint }}
-  <link
-    rel="stylesheet"
-    href="{{ .RelPermalink }}"
-    integrity="{{ .Data.Integrity }}"
-  />
+{{- with resources.Get "css/main.css" }}
+  {{- with . | resources.ExecuteAsTemplate "css/main.gen.css" $ | minify | fingerprint }}
+    <link
+      rel="stylesheet"
+      href="{{ .RelPermalink }}"
+      integrity="{{ .Data.Integrity }}"
+    />
+  {{- end }}
 {{- end }}
