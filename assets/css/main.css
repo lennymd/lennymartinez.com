@@ -69,7 +69,7 @@
   --weight-display: 800;
 
   --color-bg: #1a1a1a;
-  --color-link: #d49f50;
+  --color-accent: #d49f50;
   --color-text: #e8e6e1;
   --color-text-muted: #9a958b;
   --color-border: #4a4133;
@@ -84,6 +84,13 @@
   --width-wide: 60rem;
   --width-page: 90rem;
   --gutter: 1.5rem;
+
+  /* used for link styling */
+
+  --underline-thickness: 1.5px;
+  --underline-offset: 2px;
+  --hover-pad: 0.15em;
+  --duration-ui: 120ms;
 }
 
 /* Reset */
@@ -122,20 +129,21 @@ img {
 /* Links */
 
 a {
-  color: var(--color-link);
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 3px;
-  padding: 0 0.15em;
-  margin: 0 -0.15em;
+  color: var(--color-text);
+  text-decoration-thickness: var(--underline-thickness);
+  text-underline-offset: var(--underline-offset);
+  text-decoration-color: var(--color-accent);
+  padding: 0 var(--hover-pad);
+  margin: 0 calc(var(--hover-pad) * -1);
   box-decoration-break: clone;
   -webkit-box-decoration-break: clone;
   transition:
-    background-color 120ms ease,
-    color 120ms ease;
+    background-color var(--duration-ui) ease,
+    color var(--duration-ui) ease,
+    text-decoration-color var(--duration-ui) ease;
 
   &:hover {
-    background: var(--color-link);
+    background-color: var(--color-accent);
     color: var(--color-bg);
     text-decoration-color: transparent;
   }
@@ -168,13 +176,14 @@ h2 {
   font-weight: var(--weight-display);
   line-height: var(--lh-snug);
   letter-spacing: -0.012em;
-  color: var(--color-text-muted);
+  /* color: var(--color-text-muted); */
   margin-top: 2.5rem;
   margin-bottom: 1rem;
   text-wrap: balance;
 }
 
 h3 {
+  color: var(--color-text-muted);
   font-size: var(--font-size-meta);
   font-weight: var(--weight-bold);
   text-transform: uppercase;
@@ -207,6 +216,18 @@ footer > * {
   ol {
     padding-left: 1.5rem;
   }
+  ol {
+    padding-left: 2.25rem;
+    list-style-type: decimal-leading-zero;
+  }
+
+  ol > li::marker {
+    color: var(--color-accent);
+    font-variant-numeric: tabular-nums;
+  }
+  ul > li::marker {
+    color: var(--color-text-muted);
+  }
 
   li {
     margin-bottom: 0.25rem;
@@ -223,15 +244,9 @@ header {
 }
 
 .site-title {
-  color: var(--color-text);
-  text-decoration: none;
+  text-decoration-line: none;
   font-weight: var(--weight-bold);
   letter-spacing: -0.012em;
-
-  &:hover {
-    background: var(--color-link);
-    color: var(--color-bg);
-  }
 }
 
 .site-short-bio {
@@ -245,21 +260,19 @@ header {
 
 .site-nav a {
   color: var(--color-text-muted);
-  text-decoration: none;
+  text-decoration-line: none;
+
   &:hover {
-    background: var(--color-link);
     color: var(--color-bg);
   }
 }
 
 .site-nav a[aria-current='page'] {
   color: var(--color-text);
-  text-decoration: underline;
-  text-decoration-thickness: 2px;
+  text-decoration-line: underline;
   text-decoration-color: var(--color-text);
-  text-underline-offset: 4px;
+
   &:hover {
-    background: var(--color-link);
     color: var(--color-bg);
     text-decoration-color: transparent;
   }
@@ -277,23 +290,15 @@ footer {
   display: inline-block;
   padding: 0.5em 1em;
   margin: 0;
-  border: 2px solid var(--color-link);
-  color: var(--color-link);
-  text-decoration: none;
+  border: 2px solid var(--color-accent);
+  color: var(--color-accent);
+  text-decoration-line: none;
   font-size: var(--font-size-meta);
   font-weight: var(--weight-bold);
-  transition:
-    background-color 120ms ease,
-    color 120ms ease;
-
-  &:hover {
-    background: var(--color-link);
-    color: var(--color-bg);
-  }
 }
 
 .update-notice {
-  border-left: 3px solid var(--color-link);
+  border-left: 3px solid var(--color-accent);
   margin-top: calc(var(--gutter) * 2);
   padding-left: var(--gutter);
   text-wrap: pretty;
@@ -342,6 +347,7 @@ footer {
   margin-top: 0;
   margin-bottom: 0.25rem;
 }
+
 .prose .work-list {
   list-style: none;
   padding-left: 0;
@@ -351,12 +357,9 @@ footer {
   }
 
   a {
-    color: var(--color-text);
-    text-decoration-color: var(--color-text-muted);
+    text-decoration-color: var(--color-accent);
 
     &:hover {
-      background: var(--color-link);
-      color: var(--color-bg);
       text-decoration-color: transparent;
     }
   }
@@ -380,18 +383,19 @@ hgroup {
 /* Accents */
 
 ::selection {
-  background: var(--color-link);
+  background: var(--color-accent);
   color: var(--color-bg);
 }
 
 mark {
-  background: var(--color-link);
+  background: var(--color-accent);
   color: var(--color-bg);
-  padding: 0 0.15em;
+  padding: 0 var(--hover-pad);
+  margin: 0 calc(var(--hover-pad) * -1);
 }
 
 :focus-visible {
-  outline: 2px solid var(--color-link);
+  outline: 2px solid var(--color-accent);
   outline-offset: 2px;
 }
 
