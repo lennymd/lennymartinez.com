@@ -1,8 +1,12 @@
 {{ define "main" }}
+  {{ $iso := .Date.Format "2006-01-02" }}
+  {{ $year := .Date.Format "2006" }}
   <article class="prose">
     <hgroup>
       <h1>{{ .Title }}</h1>
-      <p class="meta">{{ .Date.Format "2006" }}</p>
+      <p class="meta">
+        <p class="meta"><time datetime="{{ $iso }}">{{ $year }}</time></p>
+      </p>
     </hgroup>
 
     {{ with .Params.headImage }}

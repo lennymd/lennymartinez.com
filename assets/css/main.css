@@ -212,8 +212,7 @@ footer > * {
     max-width: clamp(var(--width-content), 75vw, var(--width-wide));
   }
 
-  ul,
-  ol {
+  ul {
     padding-left: 1.5rem;
   }
   ol {
@@ -340,9 +339,8 @@ footer {
 }
 
 .year-label {
-  font-size: var(--font-size-meta);
-  font-weight: var(--weight-base);
-  color: var(--color-text-muted);
+  font-size: var(--font-size-base);
+  font-weight: var(--weight-bold);
   letter-spacing: normal;
   margin-top: 0;
   margin-bottom: 0.25rem;
@@ -354,14 +352,6 @@ footer {
 
   li {
     margin-bottom: 0.4rem;
-  }
-
-  a {
-    text-decoration-color: var(--color-accent);
-
-    &:hover {
-      text-decoration-color: transparent;
-    }
   }
 }
 
