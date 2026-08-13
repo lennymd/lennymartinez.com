@@ -14,17 +14,9 @@
 {{- end }}
 
 
-<link
-  rel="icon"
-  type="image/svg+xml"
-  href="{{ "favicon/lennymartinez.svg" | relURL }}"
-/>
+<link rel="icon" type="image/svg+xml" href="{{ "favicon/lennymartinez.svg" | relURL }}" />
 <link rel="icon" href="{{ "favicon.ico" | relURL }}" sizes="any" />
-<link
-  rel="apple-touch-icon"
-  sizes="180x180"
-  href="{{ "favicon/apple-touch-icon.png" | relURL }}"
-/>
+<link rel="apple-touch-icon" sizes="180x180" href="{{ "favicon/apple-touch-icon.png" | relURL }}" />
 {{- with resources.Get "manifest.json" }}
   {{- with . | resources.ExecuteAsTemplate "manifest.gen.json" $ }}
     <link rel="manifest" href="{{ .RelPermalink }}" />
@@ -32,11 +24,7 @@
 {{- end }}
 
 {{- with resources.Get "css/main.css" }}
-  {{- with . | resources.ExecuteAsTemplate "css/main.gen.css" $ | minify | fingerprint }}
-    <link
-      rel="stylesheet"
-      href="{{ .RelPermalink }}"
-      integrity="{{ .Data.Integrity }}"
-    />
+  {{- with . | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" />
   {{- end }}
 {{- end }}

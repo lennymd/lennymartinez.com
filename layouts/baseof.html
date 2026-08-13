@@ -1,8 +1,5 @@
 <!doctype html>
-<html
-  lang="{{ site.Language.Locale }}"
-  dir="{{ or site.Language.Direction `ltr` }}"
->
+<html lang="{{ site.Language.Locale }}" dir="{{ or site.Language.Direction `ltr` }}">
   <head>
     {{ partial "head.html" . }}
 
@@ -10,38 +7,36 @@
   <body>
     <header>
       <div class="site-identity">
-        <a href="{{ site.Home.RelPermalink }}" class="site-title"
-          >{{ site.Title }}</a
-        >
+        <a href="{{ site.Home.RelPermalink }}" class="site-title">{{ site.Title }}</a>
       </div>
       <p class="site-short-bio">{{ site.Params.shortBio | markdownify }}</p>
       <nav class="site-nav" aria-label="Primary">
         <span aria-hidden="true">&#8594;</span>
         {{ range $i, $e := site.Menus.main }}
           {{ if $i }}<span aria-hidden="true">/</span>{{ end }}
-          <a
-            href="{{ $e.URL }}"
-            {{ if $.IsMenuCurrent "main" $e }}
-              aria-current="page"
-            {{ end }}
-            >{{ $e.Name }}</a
-          >
+          {{ $aria := "" }}
+          {{ if $.IsMenuCurrent $e.Menu $e }}
+            {{ $aria = ` aria-current="page"` }}
+          {{ else if $.HasMenuCurrent $e.Menu $e }}
+            {{ $aria = ` aria-current="true"` }}
+          {{ end }}
+          <a href="{{ $e.URL }}" {{- $aria | safeHTMLAttr }}>{{ $e.Name }}</a>
         {{ end }}
       </nav>
     </header>
-    <main>{{ block "main" . }}{{ end }}</main>
+    <main>
+      {{- block "main" . }}
+      {{ end }}
+    </main>
     <footer class="prose">
       <p>
         Get in touch:
-        <a href="mailto:{{ site.Params.contactEmail }}"
-          >{{ site.Params.contactEmail }}</a
-        >.<br />
+        <a href="mailto:{{ site.Params.contactEmail }}">{{ site.Params.contactEmail }}</a>.<br />
         {{- $out := slice }}
         {{- range where site.Params.social "inFooter" true }}
           {{- $out = $out | append (printf `<a href=%q >%s</a>` .url .name) }}
         {{- end }}
-        Sometimes I share my work on
-        {{ delimit $out ", " ", and " | safeHTML }}.
+        Sometimes I share my work on {{ delimit $out ", " ", and " | safeHTML }}.
       </p>
     </footer>
   </body>
