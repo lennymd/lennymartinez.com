@@ -5,6 +5,11 @@ defaultContentLanguage = 'en'
 disableKinds = ['taxonomy', 'term']
 enableRobotsTXT = true
 
+[languages.en]
+label = 'English'
+locale = 'en-US'
+direction = 'ltr'
+
 [params]
 description = '''Hey!👋🏽 I'm Lenny Martinez, a designer and researcher. I'm currently working on my PhD in Human-Computer Interaction at ISIR in Paris, France.'''
 shortBio = '''PhD Candidate at [ISIR](https://www.isir.upmc.fr/).'''
@@ -48,7 +53,7 @@ pageRef = '/projects'
 weight = 20
 [[menu.main]]
 name = 'CV'
-pageRef = '/CV'
+pageRef = '/cv'
 weight = 30
 
 [minify]

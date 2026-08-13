@@ -20,8 +20,6 @@ Both are dev-only; nothing is bundled into the site.
 
 Config lives in `.prettierrc`: 2-space indent, 80-column width, LF endings. The `overrides` block routes `*.html` through the `go-template` parser. The JS-specific options (`semi`, `singleQuote`, `trailingComma`, `arrowParens`, `bracketSpacing`) are carryover defaults — the site has no JS.
 
-`.prettierignore` is empty (the `layouts/` entry is commented out), so templates are formatted along with everything else. Expect Prettier to break long inline links onto their own lines with trailing `>` on the following line — that's it avoiding the insertion of significant whitespace, not a bug.
-
 Run it with `npx prettier --write .`.
 
 ### .markdownlint.json

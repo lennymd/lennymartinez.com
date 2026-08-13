@@ -238,6 +238,13 @@ figure {
   margin-bottom: 1rem;
 }
 
+figcaption {
+  color: var(--color-text-muted);
+  font-size: var(--font-size-meta);
+  margin-top: 0.5rem;
+  text-wrap: pretty;
+}
+
 header {
   margin-bottom: 2rem;
 }
@@ -266,7 +273,7 @@ header {
   }
 }
 
-.site-nav a[aria-current='page'] {
+.site-nav a[aria-current] {
   color: var(--color-text);
   text-decoration-line: underline;
   text-decoration-color: var(--color-text);

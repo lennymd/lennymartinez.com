@@ -1,5 +1,9 @@
+{{- $href := .Get "href" -}}
+{{- $label := .Get "label" -}}
+{{- if not $href }}{{ errorf "The %q shortcode requires an %q parameter. See %s" $.Name "href" $.Position }}{{ end -}}
+{{- if not $label }}
+  {{ errorf "The %q shortcode requires a %q parameter. See %s" $.Name "label" $.Position }}
+{{ end -}}
 <p>
-  <a href="{{ .Get "href" }}" class="button">
-    {{ .Get "label" }}
-  </a>
+  <a href="{{ $href }}" class="button">{{ $label }}</a>
 </p>

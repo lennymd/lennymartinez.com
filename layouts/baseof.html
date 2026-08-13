@@ -14,17 +14,20 @@
         <span aria-hidden="true">&#8594;</span>
         {{ range $i, $e := site.Menus.main }}
           {{ if $i }}<span aria-hidden="true">/</span>{{ end }}
-          <a
-            href="{{ $e.URL }}"
-            {{ if $.IsMenuCurrent "main" $e }}
-              aria-current="page"
-            {{ end }}
-            >{{ $e.Name }}</a
-          >
+          {{ $aria := "" }}
+          {{ if $.IsMenuCurrent $e.Menu $e }}
+            {{ $aria = ` aria-current="page"` }}
+          {{ else if $.HasMenuCurrent $e.Menu $e }}
+            {{ $aria = ` aria-current="true"` }}
+          {{ end }}
+          <a href="{{ $e.URL }}" {{ $aria | safeHTMLAttr }}>{{ $e.Name }}</a>
         {{ end }}
       </nav>
     </header>
-    <main>{{ block "main" . }}{{ end }}</main>
+    <main>
+      {{- block "main" . }}
+      {{ end }}
+    </main>
     <footer class="prose">
       <p>
         Get in touch:

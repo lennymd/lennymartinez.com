@@ -1,15 +1,30 @@
-{{ $res := resources.Get .Destination }}
-{{ if $res }}
-  {{ $webp := $res.Resize "800x webp" }}
-  <img
-    src="{{ $webp.RelPermalink }}"
-    loading="lazy"
-    decoding="async"
-    width="{{ $webp.Width }}"
-    height="{{ $webp.Height }}"
-    alt="{{ .Text }}"
-    {{ with .Attributes.class }}class="{{ . }}"{{ end }}
-  />
-{{ else }}
-  <img src="{{ .Destination }}" alt="{{ .Text }}" />
-{{ end }}
+{{- $res := resources.Get .Destination -}}
+{{- $loading := cond (eq .Ordinal 0) "eager" "lazy" -}}
+{{- if $res -}}
+  {{- $img := $res.Resize "800x webp" -}}
+  {{- if .IsBlock -}}
+    <figure{{ with .Attributes.class }} class="{{ . }}"{{ end }}>
+      <img
+        src="{{ $img.RelPermalink }}"
+        width="{{ $img.Width }}"
+        height="{{ $img.Height }}"
+        alt="{{ .PlainText }}"
+        loading="{{ $loading }}"
+        decoding="async"
+      />
+      {{- with .Title }}<figcaption>{{ . }}</figcaption>{{ end -}}
+    </figure>
+  {{- else -}}
+    <img
+      src="{{ $img.RelPermalink }}"
+      width="{{ $img.Width }}"
+      height="{{ $img.Height }}"
+      alt="{{ .PlainText }}"
+      loading="{{ $loading }}"
+      decoding="async"
+      {{- with .Attributes.class }} class="{{ . }}"{{ end }}
+    />
+  {{- end -}}
+{{- else -}}
+  <img src="{{ .Destination | safeURL }}" alt="{{ .PlainText }}" />
+{{- end -}}
