@@ -1,9 +1,11 @@
 {{- $res := resources.Get .Destination -}}
 {{- $loading := cond (eq .Ordinal 0) "eager" "lazy" -}}
+{{- $class := "" -}}
+{{- with .Attributes.class }}{{ $class = printf ` class=%q` . }}{{ end -}}
 {{- if $res -}}
   {{- $img := $res.Resize "800x webp" -}}
   {{- if .IsBlock -}}
-    <figure{{ with .Attributes.class }} class="{{ . }}"{{ end }}>
+    <figure {{- $class | safeHTMLAttr }}>
       <img
         src="{{ $img.RelPermalink }}"
         width="{{ $img.Width }}"
@@ -22,7 +24,7 @@
       alt="{{ .PlainText }}"
       loading="{{ $loading }}"
       decoding="async"
-      {{- with .Attributes.class }} class="{{ . }}"{{ end }}
+      {{- $class | safeHTMLAttr }}
     />
   {{- end -}}
 {{- else -}}

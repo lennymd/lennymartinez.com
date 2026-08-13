@@ -1,6 +1,5 @@
 baseURL = 'https://lennymartinez.com/'
 title = 'Lenny Martinez'
-# locale = 'en-US'
 defaultContentLanguage = 'en'
 disableKinds = ['taxonomy', 'term']
 enableRobotsTXT = true
