@@ -1,9 +1,8 @@
+{{- $msg := "The %q shortcode requires a %q parameter. See %s" -}}
 {{- $href := .Get "href" -}}
 {{- $label := .Get "label" -}}
-{{- if not $href }}{{ errorf "The %q shortcode requires an %q parameter. See %s" $.Name "href" $.Position }}{{ end -}}
-{{- if not $label }}
-  {{ errorf "The %q shortcode requires a %q parameter. See %s" $.Name "label" $.Position }}
-{{ end -}}
+{{- if not $href }}{{ errorf $msg $.Name "href" $.Position }}{{ end -}}
+{{- if not $label }}{{ errorf $msg $.Name "label" $.Position }}{{ end -}}
 <p>
   <a href="{{ $href }}" class="button">{{ $label }}</a>
 </p>

@@ -4,9 +4,7 @@
   <article class="prose">
     <hgroup>
       <h1>{{ .Title }}</h1>
-      <p class="meta">
-        <p class="meta"><time datetime="{{ $iso }}">{{ $year }}</time></p>
-      </p>
+      <p class="meta"><time datetime="{{ $iso }}">{{ $year }}</time></p>
     </hgroup>
 
     {{ with .Params.headImage }}

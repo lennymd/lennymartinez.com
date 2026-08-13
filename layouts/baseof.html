@@ -20,7 +20,7 @@
           {{ else if $.HasMenuCurrent $e.Menu $e }}
             {{ $aria = ` aria-current="true"` }}
           {{ end }}
-          <a href="{{ $e.URL }}" {{ $aria | safeHTMLAttr }}>{{ $e.Name }}</a>
+          <a href="{{ $e.URL }}" {{- $aria | safeHTMLAttr }}>{{ $e.Name }}</a>
         {{ end }}
       </nav>
     </header>
