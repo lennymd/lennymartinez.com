@@ -2,9 +2,9 @@
 date = '2022-12-01'
 draft = false
 featured = false
-title = 'Women Photograph Database'
+title = 'Women Photograph Interactive Database'
 description = 'Interactive visualization of women* and nonbinary visual journalist members'
-headImage = 'img/projects/wp/wp-2.png'
+headImage = 'img/projects/wp/wp-0.png'
 headImageAlt = "Screenshot of the Women Photograph website"
 +++
 
