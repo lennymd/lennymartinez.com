@@ -1,6 +1,7 @@
 +++
 date = '2021-08-01'
 draft = false
+featured = false
 title = 'Social Needs Evidence Map'
 description = 'Interactive evidence map summarizing studies on social needs interventions'
 headImage = "img/projects/pcori/pcori-0.png"
