@@ -20,8 +20,6 @@ The narrator, a visitor to this country, finds one of the MV terminals in an air
 
 ![An AI-generated image of a retro diner on a street corner: checkered floors, marble columns, waiters in matching uniforms carrying silver trays, large mirrors along the walls. The colors are flat and the food is indistinct.](img/projects/chi25/diner.png)
 
-_What the machine returned._
-
 > The colors were duller than I remembered, and the food looked nothing like I'd described. Many of the things I mentioned were represented in the visual, but it lacked the tone of how I felt when I'd seen them.
 
 They spend the rest of the wait tweaking the description, and check in for their flight with the failures stuffed into their bag.
