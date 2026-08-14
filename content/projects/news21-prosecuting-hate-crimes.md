@@ -1,8 +1,47 @@
 +++
 date = '2018-08-01'
 draft = true
-title = 'Hate in America'
+title = 'Prosecuting Hate Crimes'
+description = 'Building a dataset of federal hate crime prosecutions from DOJ press releases'
+headImage = "img/projects/news21/[FILENAME].png"
+headImageAlt = "[DESCRIBE THE IMAGE]"
 +++
+
+Since the Matthew Shepard and James Byrd, Jr. Hate Crimes Prevention Act passed in 2009, there has been no single public record of which federal crimes were actually prosecuted under it. I built one by applying natural language processing to Department of Justice press releases, identifying and classifying every federal prosecution brought under the various hate crime statutes. [ONE SENTENCE ON WHAT THE FINISHED DATASET COVERED — how many prosecutions, what date range, what fields.]
+
+## Method
+
+1. **Collection.** [How you obtained the DOJ press releases — scraped, bulk
+   download, API. How many documents, covering what date range.]
+2. **Filtering.** [How you narrowed the corpus to hate crime prosecutions.
+   What the classifier or rules looked for, and what stack you used.]
+3. **Extraction.** [What you pulled from each release — defendant, statute,
+   district, charge, outcome — and how.]
+4. **Statute matching.** [How you determined which hate crime law applied to
+   each prosecution.]
+5. **Validation.** [How you checked the output. Sample size, error rate, what
+   the pipeline got wrong and how you corrected it.]
+
+[CLOSING SENTENCE — what the finished dataset let the newsroom do that it
+couldn't do before. This is the payoff; don't skip it.]
+
+The analysis was produced during my fellowship with [Carnegie-Knight
+News21](https://news21.com/about/), a national reporting initiative
+headquartered at Arizona State University's Walter Cronkite School of
+Journalism and Mass Communication. Findings from this work supported reporting
+across the newsroom's _Hate in America_ investigation.
+
+### Stories supported by this analysis
+
+- [Millions are victims of hate crimes, though many never report them](https://hateinamerica.news21.com/millions-victims-of-hate-crimes/)
+- [Black Americans still are victims of hate crimes more than any other group](https://hateinamerica.news21.com/black-americans-hate-crime-victims-more-than-any-group/)
+- [As intolerance grows, targeted religious groups join forces](https://hateinamerica.news21.com/intolerance-grows-targeted-religious-groups-join-forces/)
+- [Lack of trust in law enforcement hinders reporting of LGBTQ crimes](https://hateinamerica.news21.com/lack-of-trust-in-law-enforcement-hinders-reporting-LGBTQ-crimes/)
+- [Police trained in hate crimes are key to convictions](https://hateinamerica.news21.com/police-trained-in-hate-crimes-key-to-convictions/)
+
+---
+
+OLD DRAFT BELOW
 
 _Carnegie-Knight News21 is a national reporting initiative, headquartered at Arizona State University’s Walter Cronkite School of Journalism and Mass Communication, which brings top journalism students from across the country to report and produce in-depth, multimedia projects for major media outlets, such as The Washington Post, NBC News and USA Today. ([News21](https://news21.com/about/))_
 

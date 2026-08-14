@@ -396,6 +396,43 @@ mark {
   outline-offset: 2px;
 }
 
+/* Blockquote */
+
+blockquote {
+  position: relative;
+  margin-block: 1.5rem;
+  padding-left: 1.9rem;
+  font-style: italic;
+  text-wrap: pretty;
+}
+
+blockquote::before {
+  content: '\201C';
+  position: absolute;
+  left: 0;
+  top: -0.15em;
+  font-size: 2.6rem;
+  line-height: 1;
+  font-style: normal;
+  color: var(--color-accent);
+}
+
+blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+blockquote cite,
+blockquote footer {
+  display: block;
+  font-style: normal;
+  font-size: var(--font-size-meta);
+  color: var(--color-text-muted);
+}
+
+blockquote cite::before {
+  content: '\2014\00a0';
+}
+
 /* Media queries */
 
 @media (prefers-reduced-motion: reduce) {
