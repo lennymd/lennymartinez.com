@@ -42,7 +42,7 @@ These are wired up in `layouts/_partials/head.html`, alongside the manifest gene
 
 ## FUTURE TASKs
 
-- [ ] add speculating Ai summer school project
+- [ ] add speculating AI summer school project
 - [ ] add news21 project
 - [ ] add pcori project
 - [ ] add **publications section**
