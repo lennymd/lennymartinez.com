@@ -51,9 +51,13 @@ name = 'Projects'
 pageRef = '/projects'
 weight = 20
 [[menu.main]]
+name = 'Publications'
+pageRef = '/publications'
+weight = 20
+[[menu.main]]
 name = 'CV'
 pageRef = '/cv'
-weight = 30
+weight = 50
 
 [minify]
 disableXML = true
