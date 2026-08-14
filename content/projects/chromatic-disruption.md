@@ -4,7 +4,7 @@ draft = false
 featured = true
 title = 'Chromatic Disruption'
 description = 'A story from a speculative 2043 issue of Interactions magazine'
-headImage = 'img/projects/interactions2043/interactions2043-red-car.jpg'
+headImage = 'img/projects/interactions2043/red-car-crop.jpg'
 headImageAlt = 'A synthetic image of a red sports car seen from behind, accelerating down a wet street between futuristic glass towers at dusk. Red neon streaks blur past on both sides, the roadside trees have red foliage, and red light reflects across the asphalt. Every other color in the scene is desaturated grey and blue.'
 +++
 

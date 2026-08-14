@@ -1,6 +1,6 @@
 +++
 date = '2025-04-27'
-draft = true
+draft = false
 featured = true
 title = 'Airport Photos'
 description = 'A short story about a country where only a state-approved model may make images'
@@ -14,7 +14,7 @@ Storytelling suits that question better than prototyping does. Building and test
 
 ## An excerpt
 
-The narrator, a visitor to this country, finds one of the MV terminals in an airport: an arcade console stripped of color, keyboard and trackball where the game controls used to be, stickered with the airport code and the slogan _Enhancing every Frame_. They describe the best thing they saw on their trip:
+The narrator, a visitor leaving this country, finds one of the MV terminals at the airport. It resembled an arcade console stripped of color. The game controllers had been replaced with an industrial keyboard and mouse ball, and the outside had been lined with big stickers of the airport code and a marketing slogan, “Enhancing every Frame.” They describe the best thing they saw on their trip:
 
 > I visited this famous restaurant that had been open for 50 years and had become a central part of the community. The building was on the street corner with a small parking lot that I never saw empty. The building had never been remodeled and had the original decorations. It reminded me of what Las Vegas could look like when it was built: bright and flashy with a sense of grandeur. Compared to the other shops and houses in the area, it was like a pearl. Inside, it looked like a diner from the 1950s or 1960s America with checker-patterned floors and clean surfaces. There were marble columns throughout the interior and big mirrors on most walls. It felt like being at church. All the waiters, regardless of gender or race, wore black trousers with white button-downs and a black tie and vest. They all had the same dark green aprons. It felt like I’d been transported back in time. The food they brought out looked delicious on big silver trays. Each plate was colorful, and the portions were so generous...
 
