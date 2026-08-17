@@ -56,7 +56,9 @@ These are wired up in `layouts/_partials/head.html`, alongside the manifest gene
 
 - #000002;
 - #0013ff; <!-- industra -->
-- #637cff; <!-- industra -->
+- #2a0df5;
+- #637cff;
+- #ccffcc;
 - #d2d2d2;
 - #efa537; <!-- alec soth -->
 - #fdb7b7;
@@ -64,4 +66,5 @@ These are wired up in `layouts/_partials/head.html`, alongside the manifest gene
 - #ff7be0; <!-- industra -->
 - #fff535; <!-- industra -->
 - #fffa87;
+- #ffff00;
 - #ffffff;
