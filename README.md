@@ -44,9 +44,24 @@ These are wired up in `layouts/_partials/head.html`, alongside the manifest gene
 
 - [ ] add speculating AI summer school project
 - [ ] add news21 project
-- [ ] add pcori project
-- [ ] add **publications section**
+- [ ] create a light-theme color template
+- [x] add pcori project
+- [x] add **publications section**
 - [ ] create **gallery section** for photos
 - [ ] create **notes section** for mini-blog.
 - [ ] Update **render-image** to use srcset
 - [ ] Implement **JSON-LD `Person` schema.**
+
+## Colors we can use
+
+- #000002;
+- #0013ff; <!-- industra -->
+- #637cff; <!-- industra -->
+- #d2d2d2;
+- #efa537; <!-- alec soth -->
+- #fdb7b7;
+- #ff63a6;
+- #ff7be0; <!-- industra -->
+- #fff535; <!-- industra -->
+- #fffa87;
+- #ffffff;
