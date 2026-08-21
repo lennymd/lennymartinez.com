@@ -55,16 +55,24 @@ These are wired up in `layouts/_partials/head.html`, alongside the manifest gene
 ## Colors we can use
 
 - #000002;
-- #0013ff; <!-- industra -->
+- #0013ff; <!-- industra coffee -->
+- #151b2d; <!-- old mym -->
+- #1a1a1a;
 - #2a0df5;
+- #4a4133;
 - #637cff;
+- #9a958b;
 - #ccffcc;
 - #d2d2d2;
+- #d49f50;
+- #e8e6e1;
 - #efa537; <!-- alec soth -->
+- #f4f8ff; <!-- old mym -->
 - #fdb7b7;
+- #ff5e37; <!-- old mym -->
 - #ff63a6;
-- #ff7be0; <!-- industra -->
-- #fff535; <!-- industra -->
+- #ff7be0; <!-- industra coffee -->
+- #fff535; <!-- industra coffee -->
 - #fffa87;
 - #ffff00;
 - #ffffff;
