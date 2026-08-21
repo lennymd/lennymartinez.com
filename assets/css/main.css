@@ -68,11 +68,16 @@
   --weight-bold: 600;
   --weight-display: 800;
 
-  --color-bg: #1a1a1a;
-  --color-accent: #d49f50;
-  --color-text: #e8e6e1;
-  --color-text-muted: #9a958b;
-  --color-border: #4a4133;
+  --color-bg: #f4f8ff;
+  --color-accent: #0013ff;
+  --color-text: #000002;
+  --color-text-muted: #585d6c;
+  --color-border: #d2d2d2;
+
+  --color-pop-yellow: #fff535;
+  --color-pop-pink: #ff7be0;
+  --color-pop-mint: #ccffcc;
+  --color-pop-blush: #fdb7b7;
 
   --font-size-base: 1.125rem;
   --font-size-meta: 1rem;
@@ -176,7 +181,6 @@ h2 {
   font-weight: var(--weight-display);
   line-height: var(--lh-snug);
   letter-spacing: -0.012em;
-  /* color: var(--color-text-muted); */
   margin-top: 2.5rem;
   margin-bottom: 1rem;
   text-wrap: balance;
@@ -314,6 +318,35 @@ footer {
   }
 }
 
+.callout {
+  border: 2px solid var(--color-text);
+  color: var(--color-text);
+  padding: 1rem var(--gutter);
+  margin-block: var(--gutter);
+  text-wrap: pretty;
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+
+  a {
+    color: var(--color-text);
+  }
+}
+
+.callout--yellow {
+  background-color: var(--color-pop-yellow);
+}
+.callout--pink {
+  background-color: var(--color-pop-pink);
+}
+.callout--mint {
+  background-color: var(--color-pop-mint);
+}
+.callout--blush {
+  background-color: var(--color-pop-blush);
+}
+
 .hero {
   margin-top: 2rem;
   margin-bottom: 1rem;
@@ -380,13 +413,13 @@ hgroup {
 /* Accents */
 
 ::selection {
-  background: var(--color-accent);
-  color: var(--color-bg);
+  background: var(--color-pop-yellow);
+  color: var(--color-text);
 }
 
 mark {
-  background: var(--color-accent);
-  color: var(--color-bg);
+  background-color: var(--color-pop-yellow);
+  color: var(--color-text);
   padding: 0 var(--hover-pad);
   margin: 0 calc(var(--hover-pad) * -1);
 }
@@ -414,7 +447,7 @@ blockquote::before {
   font-size: 2.6rem;
   line-height: 1;
   font-style: normal;
-  color: var(--color-accent);
+  color: var(--color-pop-pink);
 }
 
 blockquote p:last-child {
