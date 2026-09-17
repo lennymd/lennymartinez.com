@@ -11,10 +11,14 @@ Thesis (working title): _"Representational Agency in Documentary and Personal Ph
 Advisors: Baptiste Caramiaux (Sorbonne Université) and Sarah Fdili Alaoui (University of the Arts, London)
 
 **MSc. in Design for Interaction**, 2023  
-Delft University of Technology (TU Delft), the Netherlands
+Delft University of Technology (TU Delft), the Netherlands  
+Thesis: _“Design Guidelines for Human-Agent Collaboration in a Painting Context: Authority, Autonomy, and Delegation”_  
+Committee: Nazlı Cila (Chair); Marco Rozendaal
 
 **MSc. in Photography**, 2019  
-Syracuse University, The Newhouse School of Public Communications, USA
+Syracuse University, The Newhouse School of Public Communications, USA  
+_No formal thesis. Presented three projects on data-driven and visual storytelling_  
+Committee: Mike Davis (Chair); Jodi Upton; Alberto Cairo
 
 **BSc. in Mechanical Engineering**, 2017  
 Massachusetts Institute of Technology (MIT), USA
@@ -25,7 +29,7 @@ Massachusetts Institute of Technology (MIT), USA
 ACIDE Team, HCI Group
 
 **Research Assistant**, Faculty of Industrial Design Engineering, TU Delft, 2022–2023  
-Collaborated with: Maria Luce Lupetti, Dave Murray-Rust, and Senthil Chandrasegaran
+Supervised by: Maria Luce Lupetti, Dave Murray-Rust, and Senthil Chandrasegaran
 
 **Lecturer**, University of Miami, 2019–2021  
 School of Communication, Departments of Interactive Media and of Journalism and Media Management
@@ -49,9 +53,12 @@ School of Communication, Departments of Interactive Media and of Journalism and 
 - **Interactive Technology Design**, TU Delft: Spring 2023.
 - **Design Theory and Methodology**, TU Delft: Fall 2022.
 - **eHealth**, TU Delft: Spring 2022.
-- **Product Engineering Processes**, MIT: Fall 2018.
-- **Documentary Photography/Photo Journalism - Still Images of a World In Motion**, MIT: Spring 2017.
-- **Engineering Innovation and Design**, MIT: Fall 2015.
+- **Product Engineering Processes (2.009)**, MIT: Fall 2018.
+- **Multimedia Storytelling (COM117)**, Syracuse University: Spring 2018
+- **Introduction to Graphic Design (GRA217)**, Syracuse University: Fall 2017; Spring 2018
+- **Introductory Graphics Laboratory (GRA218)**, Syracuse University: Fall 2017; Spring 2018
+- **Documentary Photography/Photo Journalism - Still Images of a World In Motion (21W.749)**, MIT: Spring 2017.
+- **Engineering Innovation and Design (ESD.051)**, MIT: Fall 2015.
 
 ## Service
 
