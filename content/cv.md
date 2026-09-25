@@ -8,7 +8,7 @@ draft = false
 **PhD Candidate in Human-Computer Interaction**, 2024–present  
 Sorbonne Université, ISIR, France  
 Thesis (working title): _"Representational Agency in Documentary and Personal Photography with Generative AI"_  
-Advisors: Baptiste Caramiaux (Sorbonne Université) and Sarah Fdili Alaoui (University of the Arts, London)
+Advisors: Baptiste Caramiaux (Sorbonne Université) and Sarah Fdili Alaoui (Univ. of the Arts London)
 
 **MSc. in Design for Interaction**, 2023  
 Delft University of Technology (TU Delft), the Netherlands  
@@ -16,23 +16,21 @@ Thesis: _“Design Guidelines for Human-Agent Collaboration in a Painting Contex
 Committee: Nazlı Cila (Chair); Marco Rozendaal
 
 **MSc. in Photography**, 2019  
-Syracuse University, The Newhouse School of Public Communications, USA  
-_No formal thesis. Presented three projects on data-driven and visual storytelling_  
-Committee: Mike Davis (Chair); Jodi Upton; Alberto Cairo
+Syracuse University, The Newhouse School of Public Communications, USA
 
 **BSc. in Mechanical Engineering**, 2017  
 Massachusetts Institute of Technology (MIT), USA
 
 ## Research and Professional Experience
 
-**Doctoral Researcher**, ISIR, Sorbonne University, 2024–present  
+**Doctoral Researcher**, ISIR, Sorbonne Université, 2024–present  
 ACIDE Team, HCI Group
 
-**Research Assistant**, Faculty of Industrial Design Engineering, TU Delft, 2022–2023  
-Supervised by: Maria Luce Lupetti, Dave Murray-Rust, and Senthil Chandrasegaran
+**Research Assistant**, Faculty of Industrial Design Engineering, TU Delft, 2022–23  
+Supervised by: Maria Luce Lupetti and Dave Murray-Rust
 
-**Lecturer**, University of Miami, 2019–2021  
-School of Communication, Departments of Interactive Media and of Journalism and Media Management
+**Lecturer**, University of Miami, 2019–21  
+School of Communication, Depts. of Interactive Media and of Journalism and Media Management
 
 ## Teaching
 
@@ -67,7 +65,7 @@ School of Communication, Departments of Interactive Media and of Journalism and 
 - **ACM Transactions on Computer-Human Interaction (TOCHI)**, 2026.
 - **Human-Computer Interaction Journal**, 2026.
 - **ACM Creativity & Cognition (C&C)**, 2026.
-- **ACM Designing Interactive Systems (DIS)**, 2025–2026.
+- **ACM Designing Interactive Systems (DIS)**, 2025–26.
 - **ACM Conference on Human Factors in Computing Systems (CHI)**, 2025.
 
 ### Student Volunteer
@@ -79,9 +77,13 @@ School of Communication, Departments of Interactive Media and of Journalism and 
 - **DCODE Summer School: Design for entangled interactions**, 2022.
 - **TU Delft Design for AI Symposium**, 2022.
 
-## Awards & Fellowships
+## Grants and Fellowships
+
+- **PEPR eNSEMBLE**, Doctoral funding (100k€), 2023.
+- **Carnegie-Knight News21 Fellowship**, Hate in America, 2018.
+
+## Awards
 
 - **Robert F. Kennedy Journalism Award in College Journalism**, Hate in America, 2019.
 - **Student Edward R. Murrow Award for Excellence in Digital Reporting**, Hate in America, 2019.
-- **Carnegie-Knight News21 Fellowship**, Hate in America, 2018.
 - **Visual Communications Department Prize in Immersive Media**, Syracuse University, 2018.
