@@ -43,7 +43,7 @@ inFooter = false
 
 [menu]
 [[menu.main]]
-name = 'Home'
+name = 'About'
 pageRef = '/'
 weight = 10
 [[menu.main]]

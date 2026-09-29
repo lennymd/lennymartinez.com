@@ -6,12 +6,11 @@
   </head>
   <body>
     <header>
-      <div class="site-identity">
+      <!-- <div class="site-identity">
         <a href="{{ site.Home.RelPermalink }}" class="site-title">{{ site.Title }}</a>
       </div>
-      <p class="site-short-bio">{{ site.Params.shortBio | markdownify }}</p>
+      <p class="site-short-bio">{{ site.Params.shortBio | markdownify }}</p> -->
       <nav class="site-nav" aria-label="Primary">
-        <span id="arrow" aria-hidden="true">&#8594;</span>
         {{ range $i, $e := site.Menus.main }}
           {{ if $i }}<span aria-hidden="true">/</span>{{ end }}
           {{ $aria := "" }}

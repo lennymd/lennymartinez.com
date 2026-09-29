@@ -1,17 +1,7 @@
 {{ define "main" }}
   <article class="prose">
-    <h1>{{ .Title }}</h1>
+    <!-- <h1>{{ .Title }}</h1> -->
     {{ .Content }}
-
-
-    <ul class="work-list">
-      {{ range where (where .Site.RegularPages "Section" "projects") "Params.featured" true }}
-        <li>
-          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-          <span class="year">({{ .Date.Year }})</span>
-        </li>
-      {{ end }}
-    </ul>
 
     <div class="callout callout--yellow">
       <p>

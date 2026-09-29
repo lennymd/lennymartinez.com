@@ -1,33 +1,29 @@
 /* Variables */
 
 :root {
-  --font-sans: 'DM Sans', system-ui, sans-serif;
-  --font-serif: Georgia, 'Times New Roman', serif;
-  --font-mono: 'DM Mono', ui-monospace, monospace;
+  --font-serif: 'Aleo', Georgia, serif;
 
   --weight-base: 400;
-  --weight-bold: 600;
-  --weight-display: 800;
+  /* --weight-bold: 600; */
+  /* --weight-display: 800; */
 
-  --color-bg: #f4f8ff;
-  --color-accent: #0013ff;
+  --color-accent: #115545;
+  /* #0013ff; */
   --color-text: black;
   --color-text-muted: #585d6c;
   --color-border: #d2d2d2;
+  --color-green: #115545;
 
   --color-pop-yellow: #fff535;
-  --color-pop-pink: #ff7be0;
-  --color-pop-mint: #ccffcc;
-  --color-pop-blush: #fdb7b7;
+  /* --color-pop-pink: #ff7be0; */
+  /* --color-pop-mint: #ccffcc; */
+  /* --color-pop-blush: #fdb7b7; */
 
-  --font-size-base: 1.25rem;
-  --font-size-meta: 1rem;
+  --font-size-base: 20px;
+  --font-size-meta: 14px;
   --lh-base: 1.5;
-  --lh-tight: 1.15;
-  --lh-snug: 1.25;
 
-  --width-content: 43rem;
-  --width-wide: 53rem;
+  --width-content: 600px;
   --width-page: 90rem;
   --gutter: 1.5rem;
 
@@ -57,7 +53,7 @@ body {
   font-size: var(--font-size-base);
   line-height: var(--lh-base);
   color: var(--color-text);
-  background-color: var(--color-bg);
+
   max-width: var(--width-page);
   margin-inline: auto;
   padding: 2rem var(--gutter);
@@ -69,6 +65,7 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+  margin: 0 auto;
 }
 
 nav {
@@ -78,7 +75,7 @@ nav {
 /* Links */
 
 a {
-  color: var(--color-text);
+  color: var(--color-accent);
   text-decoration-thickness: var(--underline-thickness);
   text-underline-offset: var(--underline-offset);
   text-decoration-color: var(--color-accent);
@@ -93,15 +90,9 @@ a {
 
   &:hover {
     background-color: var(--color-accent);
-    color: var(--color-bg);
+    color: white;
     text-decoration-color: transparent;
   }
-}
-
-:is(h1, h2) a,
-.site-title {
-  font-family: var(--font-sans);
-  font-size: inherit;
 }
 
 /* Typography */
@@ -117,7 +108,7 @@ p {
 }
 
 h1 {
-  font-size: clamp(1.9rem, 1.5rem + 1.8vw, 2.5rem);
+  /* font-size: clamp(1.9rem, 1.5rem + 1.8vw, 2.5rem); */
   font-weight: var(--weight-base);
   line-height: var(--lh-tight);
   letter-spacing: -0.021em;
@@ -208,37 +199,24 @@ header {
   margin-bottom: 2rem;
 }
 
-.site-title {
-  text-decoration-line: none;
-  font-weight: var(--weight-bold);
-  letter-spacing: -0.012em;
-}
-
-.site-short-bio {
-  margin-bottom: 0;
-}
-
 .site-nav {
   margin-top: 0.75rem;
-  font-size: var(--font-size-base);
+  display: flex;
+  flex-direction: wrap;
+  justify-content: end;
 }
 
 .site-nav a {
   color: var(--color-text-muted);
   text-decoration-line: none;
-
-  &:hover {
-    color: var(--color-bg);
-  }
 }
 
 .site-nav a[aria-current] {
-  color: var(--color-text);
+  color: var(--color-accent);
   text-decoration-line: underline;
   text-decoration-color: var(--color-text);
 
   &:hover {
-    color: var(--color-bg);
     text-decoration-color: transparent;
   }
 }
