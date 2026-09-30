@@ -11,4 +11,4 @@ headImageAlt = "Screenshot of the Women Photograph website"
 
 [Women Photograph](https://www.womenphotograph.com) is a non-profit that maintains a database of more than 1,400 independent women\* and nonbinary visual journalists from around the world. For the site's relaunch, I redesigned and built an interactive version of the database for the homepage. Visitors can search by name or filter by categories such as Region, Race/Ethnicity, and Skills. The order of photographers is shuffled every time the page loads.
 
-[Visit live project](https://www.womenphotograph.com/database)
+- [Live project](https://www.womenphotograph.com/database)

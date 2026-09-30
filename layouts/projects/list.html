@@ -1,5 +1,4 @@
 {{ define "main" }}
-  <!-- <h1>{{ .Title }}</h1> -->
   {{ range .Pages.ByDate.Reverse }}
     <article class="project">
       <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
