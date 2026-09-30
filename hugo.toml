@@ -16,8 +16,8 @@ contactEmail = 'lenny.martinez@isir.upmc.fr'
 images = ['img/lennymartinez.jpg']
 
 [params.meta]
-themeColor = '#d49f50'
-backgroundColor = '#1a1a1a'
+themeColor = '#115545'
+backgroundColor = '#fff'
 ogImageAlt = 'Lenny Martinez'
 
 [[params.social]]
@@ -47,17 +47,13 @@ name = 'About'
 pageRef = '/'
 weight = 10
 [[menu.main]]
-name = 'Projects'
+name = 'Work'
 pageRef = '/projects'
 weight = 20
 [[menu.main]]
 name = 'Publications'
 pageRef = '/publications'
 weight = 30
-[[menu.main]]
-name = 'CV'
-pageRef = '/cv'
-weight = 50
 
 [minify]
 disableXML = true
