@@ -1,5 +1,5 @@
 {{- $res := resources.Get .Destination -}}
-{{- $loading := cond (eq .Ordinal 0) "eager" "lazy" -}}
+{{- $loading := cond (and (eq .Ordinal 0) (not .Page.Params.headImage)) "eager" "lazy" -}}
 {{- $class := "" -}}
 {{- with .Attributes.class }}{{ $class = printf ` class=%q` . }}{{ end -}}
 {{- if $res -}}

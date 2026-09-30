@@ -1,10 +1,10 @@
 +++
-title = 'Hey! 👋🏽'
+title = 'Lenny Martinez'
 draft = false
 +++
 
-Hello! 👋🏽 I'm Lenny.
+Hello! I'm Lenny. I'm a designer and PhD researcher at [ISIR](https://www.isir.upmc.fr/), Sorbonne Université, in Paris. I research how generative AI systems are changing our relationship to photographs.
 
-I am a designer and researcher at the [Institute of Intelligent Systems and Robotics (ISIR)](https://www.isir.upmc.fr/), Sorbonne Université in Paris. My research explores how generative AI systems are changing our relationship with photographic practice.
+Previously, I studied interaction design at TU Delft, and taught data visualization and web development at the University of Miami.
 
 In my free time, I boulder, visit cafés, and study new languages.

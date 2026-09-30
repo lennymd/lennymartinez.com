@@ -10,8 +10,7 @@ locale = 'en-US'
 direction = 'ltr'
 
 [params]
-description = '''Hey!👋🏽 I'm Lenny Martinez, a designer and researcher. I'm currently working on my PhD in Human-Computer Interaction at ISIR in Paris, France.'''
-shortBio = '''PhD Candidate at [ISIR](https://www.isir.upmc.fr/).'''
+description = '''Hey! 👋🏽 I'm Lenny Martinez, a designer and researcher. I'm currently working on my PhD in Human-Computer Interaction at ISIR in Paris, France.'''
 contactEmail = 'lenny.martinez@isir.upmc.fr'
 images = ['img/lennymartinez.jpg']
 
@@ -19,26 +18,6 @@ images = ['img/lennymartinez.jpg']
 themeColor = '#115545'
 backgroundColor = '#fff'
 ogImageAlt = 'Lenny Martinez'
-
-[[params.social]]
-name = 'Instagram'
-url = 'https://instagram.com/lennyisnoticing'
-inFooter = true
-
-[[params.social]]
-name = 'LinkedIn'
-url = 'https://www.linkedin.com/in/lennymartinezd/'
-inFooter = true
-
-[[params.social]]
-name = 'GitHub'
-url = 'https://github.com/lennymd'
-inFooter = true
-
-[[params.social]]
-name = 'Google Scholar'
-url = 'https://scholar.google.com/citations?hl=en&user=sEuQs7wAAAAJ'
-inFooter = false
 
 
 [menu]
@@ -50,10 +29,6 @@ weight = 10
 name = 'Work'
 pageRef = '/projects'
 weight = 20
-[[menu.main]]
-name = 'Publications'
-pageRef = '/publications'
-weight = 30
 
 [minify]
 disableXML = true

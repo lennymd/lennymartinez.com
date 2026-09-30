@@ -61,7 +61,7 @@ As part of my time as a News21 Fellow, I investigated the occurrences and prosec
 
 As part of my time as a News21 Fellow, I traveled across the US to meet citizens and understand the tensions brought by the Trump Administration's stance on immigrants. For this project, I worked as a photojournalist. On the road, I photographed and interviewed individuals in Spanish and English, and contributed to the team's blog. At the end of the trip, I produced an interactive story highlighting our findings.
 
-{{< button href="https://hateinamerica.news21.com/roadtrip/" label="Visit live project" >}}
+[Visit live project](https://hateinamerica.news21.com/roadtrip/)
 
 ### The State of Hate blog posts
 

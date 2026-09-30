@@ -3,8 +3,7 @@
 :root {
   --font-serif: 'Aleo', Georgia, serif;
   --color-text: black;
-  /* --color-accent: #115545; */
-  /* --color-accent: #0013ff; */
+  --color-accent: #115545;
 
   --font-size-base: 20px;
   --lh-base: 1.5;
@@ -31,6 +30,7 @@ body {
   font-size: var(--font-size-base);
   line-height: var(--lh-base);
   color: var(--color-text);
+  overflow-wrap: break-word;
 }
 
 img {
@@ -44,13 +44,20 @@ a {
   color: inherit;
   text-decoration: none;
   border-bottom: 1px solid;
+  &:hover {
+    color: var(--color-accent);
+  }
 }
 
 :focus-visible {
-  outline: 1px solid;
+  outline: 2px solid var(--color-accent);
   outline-offset: 2px;
 }
 
+::selection {
+  background: #fff535;
+  color: var(--color-text);
+}
 /* Typography */
 
 strong,
@@ -102,33 +109,25 @@ figure {
   margin-bottom: 1em;
 }
 
-figcaption,
-.meta {
-  font-style: italic;
-}
-
 figcaption {
   margin-top: 0.5em;
-}
-
-blockquote {
-  margin-block: 1.5em;
-  padding-left: 1.5em;
   font-style: italic;
 }
 
-blockquote p:last-child {
+.meta {
   margin-bottom: 0;
+  font-style: italic;
 }
 
-blockquote cite,
-blockquote footer {
-  display: block;
-  font-style: normal;
-}
+/* Utilities */
 
-blockquote cite::before {
-  content: '\2014\00a0';
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
 }
 
 /* Layout */
@@ -155,11 +154,6 @@ footer {
 }
 
 /* Components */
-
-.callout {
-  margin-block: 2em;
-  font-style: italic;
-}
 
 .hero {
   margin-bottom: 2em;
@@ -191,9 +185,5 @@ hgroup {
 }
 
 hgroup > h1 {
-  margin-bottom: 0;
-}
-
-.meta {
   margin-bottom: 0;
 }

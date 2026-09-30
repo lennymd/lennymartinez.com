@@ -1,3 +1,3 @@
 +++
-title = "Past Projects"
+title = "Projects"
 +++

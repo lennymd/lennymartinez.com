@@ -6,10 +6,6 @@
   </head>
   <body>
     <header>
-      <!-- <div class="site-identity">
-        <a href="{{ site.Home.RelPermalink }}" class="site-title">{{ site.Title }}</a>
-      </div>
-      <p class="site-short-bio">{{ site.Params.shortBio | markdownify }}</p> -->
       <nav class="site-nav" aria-label="Primary">
         {{ range $i, $e := site.Menus.main }}
           {{ if $i }}<span aria-hidden="true">/</span>{{ end }}
@@ -27,15 +23,10 @@
       {{- block "main" . }}
       {{ end }}
     </main>
-    <footer class="prose">
+    <footer>
       <p>
         Get in touch:
-        <a href="mailto:{{ site.Params.contactEmail }}">{{ site.Params.contactEmail }}</a>.<br />
-        {{- $out := slice }}
-        {{- range where site.Params.social "inFooter" true }}
-          {{- $out = $out | append (printf `<a href=%q >%s</a>` .url .name) }}
-        {{- end }}
-        Sometimes I share my work on {{ delimit $out ", " ", and " | safeHTML }}.
+        <a href="mailto:{{ site.Params.contactEmail }}">{{ site.Params.contactEmail }}</a>.
       </p>
     </footer>
   </body>

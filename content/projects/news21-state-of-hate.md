@@ -9,7 +9,7 @@ headImageAlt = "[DESCRIBE THE PHOTOGRAPH OR SCREENSHOT]"
 
 State of Hate was a cross-country reporting trip covering how communities were experiencing the Trump administration's stance on immigrants. I worked as a photojournalist, photographing and interviewing people in Spanish and English across [N STATES / ROUTE], and filed to the team blog as we traveled. At the end of the trip I built an interactive story collecting what we found. [ONE OR TWO SENTENCES ON WHAT THE INTERACTIVE STORY DOES — how a reader moves through it, what they see, how the photographs and interviews are organized.]
 
-{{< button href="https://hateinamerica.news21.com/roadtrip/" label="Visit live project" >}}
+[Visit live project](https://hateinamerica.news21.com/roadtrip/)
 
 ![[ALT TEXT DESCRIBING THIS SPECIFIC IMAGE]](img/projects/news21/state-of-hate-3.png)
 
@@ -46,7 +46,7 @@ _Carnegie-Knight News21 is a national reporting initiative, headquartered at Ari
 
 As part of my time as a News21 Fellow, I traveled across the US to meet citizens and understand the tensions brought by the Trump Administration's stance on immigrants. For this project, I worked as a photojournalist. On the road, I photographed and interviewed individuals in Spanish and English, and contributed to the team's blog. At the end of the trip, I produced an interactive story highlighting our findings.
 
-{{< button href="https://hateinamerica.news21.com/roadtrip/" label="Visit live project" >}}
+[Visit live project](https://hateinamerica.news21.com/roadtrip/)
 
 ### The State of Hate blog posts
 
