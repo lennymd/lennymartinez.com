@@ -4,7 +4,7 @@ draft = false
 title = 'Social Needs Evidence Map'
 description = 'An interactive evidence map for PCORI that lets researchers filter and explore studies on social needs interventions and their health outcomes.'
 subtitle = 'interactive visualization, 2021'
-headImage = "img/projects/pcori/pcori-0.png"
+headImage = "img/projects/pcori/pcori-1.png"
 headImageAlt = "Screenshot of the Evidence Map interface landing"
 +++
 
