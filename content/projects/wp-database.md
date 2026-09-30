@@ -5,7 +5,7 @@ featured = false
 title = 'Women Photograph Interactive Database'
 description = 'A filterable, searchable database of more than 1,400 women* and nonbinary visual journalists, designed and built for Women Photograph.'
 subtitle = 'interactive visualization, 2022'
-headImage = 'img/projects/wp/wp-0.png'
+headImage = 'img/projects/wp/wp-2.png'
 headImageAlt = "Screenshot of the Women Photograph website"
 +++
 
