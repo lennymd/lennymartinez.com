@@ -1,22 +1,6 @@
 {{ define "main" }}
-  <article class="prose">
-    <h1>{{ .Title }}</h1>
+  <article>
+    <h1 class="visually-hidden">{{ .Title }}</h1>
     {{ .Content }}
-
-
-    <ul class="work-list">
-      {{ range where (where .Site.RegularPages "Section" "projects") "Params.featured" true }}
-        <li>
-          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-          <span class="year">({{ .Date.Year }})</span>
-        </li>
-      {{ end }}
-    </ul>
-
-    <div class="callout callout--pink">
-      <p>
-        <strong>This portfolio is a work in progress.</strong> I'm in the process of adding projects from the archive!
-      </p>
-    </div>
   </article>
 {{ end }}

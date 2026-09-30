@@ -1,15 +1,24 @@
 {{ define "main" }}
-  <article class="prose">
-    <h1>{{ .Title }}</h1>
-    {{ range .Pages.GroupByDate "2006" }}
-      <section class="year-section">
-        <h2 class="year-label">{{ .Key }}</h2>
-        <ul class="work-list">
-          {{ range .Pages }}
-            <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
+  <h1 class="visually-hidden">{{ .Title }}</h1>
+  {{ range .Pages.ByDate.Reverse }}
+    <article class="project">
+      <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+      <a class="clean-link" href="{{ .RelPermalink }}" tabindex="-1" aria-hidden="true">
+        <p class="meta">{{ or .Params.subtitle (.Date.Format "2006") }}</p>
+        {{ with .Params.headImage }}
+          {{ with resources.Get . }}
+            {{ $img := .Resize "1200x webp" }}
+            <img
+              src="{{ $img.RelPermalink }}"
+              width="{{ $img.Width }}"
+              height="{{ $img.Height }}"
+              alt=""
+              loading="lazy"
+              decoding="async"
+            />
           {{ end }}
-        </ul>
-      </section>
-    {{ end }}
-  </article>
+        {{ end }}
+      </a>
+    </article>
+  {{ end }}
 {{ end }}

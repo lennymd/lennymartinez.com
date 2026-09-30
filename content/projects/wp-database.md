@@ -3,11 +3,12 @@ date = '2022-12-01'
 draft = false
 featured = false
 title = 'Women Photograph Interactive Database'
-description = 'Interactive visualization of women* and nonbinary visual journalist members'
+description = 'A filterable, searchable database of more than 1,400 women* and nonbinary visual journalists, designed and built for Women Photograph.'
+subtitle = 'interactive visualization, 2022'
 headImage = 'img/projects/wp/wp-0.png'
 headImageAlt = "Screenshot of the Women Photograph website"
 +++
 
-[Women Photograph](https://www.womenphotograph.com) is a non-profit that maintains a database of more than 1,400 independent women\* and nonbinary visual journalists from around the world. As part of their website relaunch, I redesigned and developed an interactive version of their database for their homepage. Visitors can filter across various categories, such as Region, Race/Ethnicity, and Skills, in addition to searching by name. The order of photographers shown is randomized each time the page loads.
+[Women Photograph](https://www.womenphotograph.com) is a non-profit that maintains a database of more than 1,400 independent women\* and nonbinary visual journalists from around the world. For the site's relaunch, I redesigned and built an interactive version of the database for the homepage. Visitors can search by name or filter by categories such as Region, Race/Ethnicity, and Skills. The order of photographers is shuffled every time the page loads.
 
-{{< button href="https://www.womenphotograph.com/database" label="Visit live project" >}}
+- [Live project](https://www.womenphotograph.com/database)
