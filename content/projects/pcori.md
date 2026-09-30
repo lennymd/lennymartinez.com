@@ -3,7 +3,8 @@ date = '2021-08-01'
 draft = false
 featured = false
 title = 'Social Needs Evidence Map'
-description = 'Interactive evidence map summarizing studies on social needs interventions'
+description = 'An interactive evidence map for PCORI that lets researchers filter and explore studies on social needs interventions and their health outcomes.'
+subtitle = 'interactive visualization, 2021'
 headImage = "img/projects/pcori/pcori-0.png"
 headImageAlt = "Screenshot of the Evidence Map interface landing"
 +++
