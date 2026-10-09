@@ -1,0 +1,4 @@
+{{ define "main" }}
+  <h1 class="visually-hidden">{{ .Title }}</h1>
+  {{ partial "news-list.html" .Pages.ByDate.Reverse }}
+{{ end }}

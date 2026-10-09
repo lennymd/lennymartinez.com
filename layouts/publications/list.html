@@ -1,0 +1,26 @@
+{{ define "main" }}
+  <h1 class="visually-hidden">{{ .Title }}</h1>
+  {{ .Content }}
+
+  {{ range .Pages.ByDate.Reverse }}
+    <article class="project">
+      <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+      <a class="clean-link" href="{{ .RelPermalink }}" tabindex="-1" aria-hidden="true">
+        <p class="meta">{{ or .Params.venue (.Date.Format "2006") }}</p>
+        {{ with .Params.headImage }}
+          {{ with resources.Get . }}
+            {{ $img := .Resize "1200x webp" }}
+            <img
+              src="{{ $img.RelPermalink }}"
+              width="{{ $img.Width }}"
+              height="{{ $img.Height }}"
+              alt=""
+              loading="lazy"
+              decoding="async"
+            />
+          {{ end }}
+        {{ end }}
+      </a>
+    </article>
+  {{ end }}
+{{ end }}

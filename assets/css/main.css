@@ -1,9 +1,11 @@
 /* Variables */
 
 :root {
-  --font-serif: 'Aleo', Georgia, serif;
+  --font-sans: 'ABC Areal', Arial, sans-serif;
+  --font-mono: 'ABC Areal Mono', monospace;
   --color-text: black;
-  --color-accent: #115545;
+  --color-text-muted: color-mix(in srgb, var(--color-text) 70%, white);
+  --color-accent: #0013ff;
 
   --font-size-base: 20px;
   --lh-base: 1.5;
@@ -25,7 +27,7 @@ body {
   max-width: 600px;
   margin: 0 auto;
   padding: 1em 1.5em;
-  font-family: var(--font-serif);
+  font-family: var(--font-sans);
   font-weight: 400;
   font-size: var(--font-size-base);
   line-height: var(--lh-base);
@@ -133,11 +135,20 @@ figcaption {
 /* Layout */
 
 header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.5em 1em;
   margin-bottom: 3em;
 }
 
-.site-nav {
-  text-align: right;
+.site-name a {
+  border-bottom: none;
+}
+
+.site-name a:hover {
+  border-bottom: 1px solid;
 }
 
 .site-nav a {
@@ -178,6 +189,10 @@ a.clean-link {
   border-bottom: none;
 }
 
+a.clean-link:hover {
+  color: inherit;
+}
+
 /* Project page: title block */
 
 hgroup {
@@ -186,4 +201,34 @@ hgroup {
 
 hgroup > h1 {
   margin-bottom: 0;
+}
+
+.headshot {
+  width: 200px;
+  margin: 0 0 1.5em;
+}
+
+/* News */
+
+.news {
+  list-style: none;
+  padding: 0;
+}
+
+.news li {
+  margin-bottom: 1.25em;
+}
+
+.news time {
+  display: block;
+  font-style: italic;
+  color: var(--color-text-muted);
+}
+
+.news-body > :last-child {
+  margin-bottom: 0;
+}
+
+.heading-aside {
+  font-style: normal;
 }

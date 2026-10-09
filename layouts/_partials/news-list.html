@@ -1,0 +1,10 @@
+<ol class="news">
+  {{ range . }}
+    <li>
+      <time class="meta" datetime="{{ .Date.Format "2006-01-02" }}">
+        {{- .Date.Format "Jan 2, 2006" -}}
+      </time>
+      <div class="news-body">{{ .Content }}</div>
+    </li>
+  {{ end }}
+</ol>

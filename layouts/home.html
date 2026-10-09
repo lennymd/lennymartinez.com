@@ -1,6 +1,29 @@
 {{ define "main" }}
   <article>
     <h1 class="visually-hidden">{{ .Title }}</h1>
+    {{ with resources.Get "img/lennymartinez.jpg" }}
+      <img
+        class="headshot"
+        src="{{ .RelPermalink }}"
+        width="{{ .Width }}"
+        height="{{ .Height }}"
+        alt="Lenny Martinez"
+        loading="eager"
+      />
+    {{ end }}
+
     {{ .Content }}
   </article>
+
+  {{ with site.GetPage "/news" }}
+    {{ $news := . }}
+    {{ with .Pages }}
+      <section class="home-news" aria-labelledby="news-heading">
+        <h2 id="news-heading">
+          News <span class="heading-aside">(<a href="{{ $news.RelPermalink }}">all news</a>)</span>
+        </h2>
+        {{ partial "news-list.html" (first 3 .ByDate.Reverse) }}
+      </section>
+    {{ end }}
+  {{ end }}
 {{ end }}

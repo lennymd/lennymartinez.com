@@ -22,13 +22,17 @@ ogImageAlt = 'Lenny Martinez'
 
 [menu]
 [[menu.main]]
-name = 'About'
-pageRef = '/'
+name = 'Publications'
+pageref = '/publications'
 weight = 10
 [[menu.main]]
 name = 'Work'
 pageRef = '/projects'
 weight = 20
+[[menu.main]]
+name = 'Teaching'
+pageRef = '/teaching'
+weight = 30
 
 [minify]
 disableXML = true

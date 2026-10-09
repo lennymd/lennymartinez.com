@@ -1,0 +1,27 @@
+{{ define "main" }}
+  <article>
+    <hgroup>
+      <h1>{{ .Title }}</h1>
+      <p class="meta">{{ or .Params.venue (.Date.Format "2006") }}</p>
+    </hgroup>
+
+    {{ with .Params.headImage }}
+      {{ $img := resources.Get . }}
+      {{ if $img }}
+        {{ $w := $img.Resize "1400x webp" }}
+        <figure class="hero">
+          <img
+            src="{{ $w.RelPermalink }}"
+            width="{{ $w.Width }}"
+            height="{{ $w.Height }}"
+            alt="{{ $.Params.headImageAlt }}"
+            loading="eager"
+            decoding="async"
+          />
+        </figure>
+      {{ end }}
+    {{ end }}
+
+    {{ .Content }}
+  </article>
+{{ end }}
