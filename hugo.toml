@@ -33,6 +33,10 @@ weight = 20
 name = 'Teaching'
 pageRef = '/teaching'
 weight = 30
+[[menu.main]]
+name = 'CV'
+url = 'https://docs.google.com/document/d/1K4ORb635olcsY9rNBFGA94HxpvrwJg4xUfw63T8mROo/export?format=pdf'
+weight = 40
 
 [minify]
 disableXML = true

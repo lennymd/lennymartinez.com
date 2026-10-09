@@ -6,9 +6,7 @@
   </head>
   <body>
     <header>
-      <span class="site-name">
-        <a href="{{ "/" | relURL }}" {{- if .IsHome }} aria-current="page"{{ end }}>{{ site.Title }}</a>
-      </span>
+      <a class="site-name" href="{{ "/" | relURL }}" {{- if .IsHome }} aria-current="page"{{ end }}>{{ site.Title }}</a>
       <nav class="site-nav" aria-label="Primary">
         {{ range $i, $e := site.Menus.main }}
           {{ if $i }}<span aria-hidden="true">/</span>{{ end }}

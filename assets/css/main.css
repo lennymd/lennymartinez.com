@@ -2,7 +2,6 @@
 
 :root {
   --font-sans: 'ABC Areal', Arial, sans-serif;
-  --font-mono: 'ABC Areal Mono', monospace;
   --color-text: black;
   --color-text-muted: color-mix(in srgb, var(--color-text) 70%, white);
   --color-accent: #0013ff;
@@ -44,8 +43,10 @@ img {
 
 a {
   color: inherit;
-  text-decoration: none;
-  border-bottom: 1px solid;
+  text-decoration-line: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
+
   &:hover {
     color: var(--color-accent);
   }
@@ -60,6 +61,7 @@ a {
   background: #fff535;
   color: var(--color-text);
 }
+
 /* Typography */
 
 strong,
@@ -85,7 +87,6 @@ h1 {
 }
 
 h2 {
-  font-style: italic;
   margin-top: 2.5em;
   margin-bottom: 0.5em;
 }
@@ -121,6 +122,11 @@ figcaption {
   font-style: italic;
 }
 
+/* A small aside next to a heading, e.g. News (all news) */
+.heading-aside {
+  font-weight: 400;
+}
+
 /* Utilities */
 
 .visually-hidden {
@@ -141,72 +147,67 @@ header {
   flex-wrap: wrap;
   gap: 0.5em 1em;
   margin-bottom: 3em;
-}
 
-.site-name a {
-  border-bottom: none;
-}
+  & a {
+    text-decoration-line: none;
 
-.site-name a:hover {
-  border-bottom: 1px solid;
-}
+    &:hover {
+      text-decoration-line: underline;
+    }
+  }
 
-.site-nav a {
-  border-bottom: none;
-}
-
-.site-nav a[aria-current],
-.site-nav a:hover {
-  border-bottom: 1px solid;
+  /* The current page is underlined in the menu, but not on the name */
+  & .site-nav a[aria-current] {
+    text-decoration-line: underline;
+  }
 }
 
 footer {
   margin-top: 6em;
 }
 
-/* Components */
-
-.hero {
-  margin-bottom: 2em;
-}
-
-/* Projects: list */
-
-.project {
-  margin-bottom: 2.5em;
-}
-
-.project h2 {
-  margin: 0;
-  font-style: normal;
-  font-weight: 400;
-}
-
-.project .meta {
-  margin-bottom: 0.5em;
-}
-
-a.clean-link {
-  border-bottom: none;
-}
-
-a.clean-link:hover {
-  color: inherit;
-}
-
-/* Project page: title block */
-
-hgroup {
-  margin-bottom: 2.5em;
-}
-
-hgroup > h1 {
-  margin-bottom: 0;
-}
+/* Home */
 
 .headshot {
   width: 200px;
   margin: 0 0 1.5em;
+}
+
+/* Lists: Work and Publications */
+
+.project {
+  margin-bottom: 2.5em;
+
+  & h2 {
+    margin: 0;
+    font-weight: 400;
+  }
+
+  & .meta {
+    margin-bottom: 0.5em;
+  }
+}
+
+a.clean-link {
+  text-decoration-line: none;
+
+  &:hover {
+    color: inherit;
+  }
+}
+
+/* Detail pages: Work and Publications */
+
+hgroup {
+  margin-bottom: 2.5em;
+
+  & > h1 {
+    margin-bottom: 0;
+  }
+}
+
+.hero {
+  margin-bottom: 2em;
 }
 
 /* News */
@@ -214,35 +215,24 @@ hgroup > h1 {
 .news {
   list-style: none;
   padding: 0;
-}
 
-.news li {
-  margin-bottom: 1.25em;
-}
+  & li {
+    margin-bottom: 1.25em;
+  }
 
-.news time {
-  display: block;
-  font-style: italic;
-  color: var(--color-text-muted);
-}
+  & time {
+    display: block;
+    color: var(--color-text-muted);
+  }
 
-.news-body > :last-child {
-  margin-bottom: 0;
-}
-
-.heading-aside {
-  font-style: normal;
-  font-weight: 400;
+  & .news-body > :last-child {
+    margin-bottom: 0;
+  }
 }
 
 /* Teaching */
 
 .course {
   font-style: normal;
-  font-weight: 500;
   margin-bottom: 0;
-}
-
-.courses strong {
-  font-weight: 500;
 }
