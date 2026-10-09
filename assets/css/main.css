@@ -64,7 +64,7 @@ a {
 
 strong,
 b {
-  font-weight: 700;
+  font-weight: 500;
 }
 
 p {
@@ -76,7 +76,7 @@ h1,
 h2,
 h3 {
   font-size: inherit;
-  font-weight: 400;
+  font-weight: 500;
   text-wrap: balance;
 }
 
@@ -179,6 +179,7 @@ footer {
 .project h2 {
   margin: 0;
   font-style: normal;
+  font-weight: 400;
 }
 
 .project .meta {
@@ -231,6 +232,7 @@ hgroup > h1 {
 
 .heading-aside {
   font-style: normal;
+  font-weight: 400;
 }
 
 /* Teaching */
