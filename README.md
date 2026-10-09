@@ -2,7 +2,7 @@
 
 Code for my website.
 
-Built with [Hugo](https://gohugo.io/) (v0.164.0, matching the Netlify build env) and deployed on Netlify via `hugo --gc --minify`.
+Built with [Hugo](https://gohugo.io/) (v0.167.0, matching the Netlify build env) and deployed on Netlify via `hugo --gc --minify`.
 
 ## Setup
 
@@ -30,6 +30,22 @@ Rule overrides for markdownlint. Three defaults are disabled:
 - `MD013` (line length) — prose isn't hard-wrapped; formatting is left to the editor.
 - `MD033` (inline HTML) — Hugo content mixes in HTML and shortcodes.
 
+## Adding content
+
+Each section has an archetype in `archetypes/` that pre-fills the front matter. New files start as drafts: set `draft = false` to publish, or preview drafts with `hugo server -D`.
+
+```sh
+hugo new news/2026-10-09-short-slug.md       # news update: date + a sentence or two of Markdown
+hugo new publications/my-paper-name.md       # publication: title, venue, description, head image
+hugo new projects/my-project-name.md         # work project (uses the default archetype)
+```
+
+- **News** items have no page of their own; they're listed on `/news/` and the latest 3 show on the home page. Prefix filenames with the date so they sort in order.
+- **Publications** use `venue` for the line under the title, e.g. `'CHI 2025'` or `'Under review'`.
+- **Projects** use `subtitle` for that line, e.g. `'design fiction, 2023'`. Add it by hand, along with `headImage` and `headImageAlt`.
+
+Lists are sorted by `date`, so set it to when the thing happened, not when the file was created.
+
 ## Favicons
 
 Favicon assets live in `static/favicon/` and are generated at <https://favicon.io/svg-favicon/>. To update, modify the `static/favicon/lennymartinez.svg`, regenerate the set there and replace:
@@ -44,35 +60,7 @@ These are wired up in `layouts/_partials/head.html`, alongside the manifest gene
 
 - [ ] add speculating AI summer school project
 - [ ] add news21 project
-- [ ] create a light-theme color template
-- [x] add pcori project
-- [x] add **publications section**
 - [ ] create **gallery section** for photos
 - [ ] create **notes section** for mini-blog.
 - [ ] Update **render-image** to use srcset
 - [ ] Implement **JSON-LD `Person` schema.**
-
-## Colors we can use
-
-- #000002;
-- #0013ff; <!-- industra coffee -->
-- #151b2d; <!-- old mym -->
-- #1a1a1a;
-- #2a0df5;
-- #4a4133;
-- #637cff;
-- #9a958b;
-- #ccffcc;
-- #d2d2d2;
-- #d49f50;
-- #e8e6e1;
-- #efa537; <!-- alec soth -->
-- #f4f8ff; <!-- old mym -->
-- #fdb7b7;
-- #ff5e37; <!-- old mym -->
-- #ff63a6;
-- #ff7be0; <!-- industra coffee -->
-- #fff535; <!-- industra coffee -->
-- #fffa87;
-- #ffff00;
-- #ffffff;
