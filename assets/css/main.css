@@ -237,5 +237,10 @@ hgroup > h1 {
 
 .course {
   font-style: normal;
+  font-weight: 500;
   margin-bottom: 0;
+}
+
+.courses strong {
+  font-weight: 500;
 }
