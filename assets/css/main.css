@@ -156,8 +156,8 @@ header {
     }
   }
 
-  /* The current page is underlined in the menu, but not on the name */
-  & .site-nav a[aria-current] {
+  /* The current page is underlined, in the menu and on the name */
+  & a[aria-current] {
     text-decoration-line: underline;
   }
 }
