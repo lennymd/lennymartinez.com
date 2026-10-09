@@ -1,0 +1,53 @@
+/* ABC Areal Mono — static weights (woff2)
+   Usage: font-family: "ABC Areal Mono", sans-serif; */
+
+/* Regular - 400 */
+@font-face {
+  font-family: 'ABC Areal Mono';
+  src: url('ABCArealMono-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ABC Areal Mono';
+  src: url('ABCArealMono-RegularItalic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Medium - 500 */
+@font-face {
+  font-family: 'ABC Areal Mono';
+  src: url('ABCArealMono-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ABC Areal Mono';
+  src: url('ABCArealMono-MediumItalic.woff2') format('woff2');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Bold - 700 */
+@font-face {
+  font-family: 'ABC Areal Mono';
+  src: url('ABCArealMono-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ABC Areal Mono';
+  src: url('ABCArealMono-BoldItalic.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
