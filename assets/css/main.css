@@ -232,3 +232,10 @@ hgroup > h1 {
 .heading-aside {
   font-style: normal;
 }
+
+/* Teaching */
+
+.course {
+  font-style: normal;
+  margin-bottom: 0;
+}
