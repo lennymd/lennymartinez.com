@@ -5,8 +5,8 @@ featured = true
 title = 'Chromatic Disruption'
 description = 'A story from a speculative 2043 issue of Interactions magazine'
 subtitle = 'design fiction, 2023'
-headImage = 'img/projects/interactions2043/red-car-crop.jpg'
-headImageAlt = 'A synthetic image of a red sports car seen from behind, accelerating down a wet street between futuristic glass towers at dusk. Red neon streaks blur past on both sides, the roadside trees have red foliage, and red light reflects across the asphalt. Every other color in the scene is desaturated grey and blue.'
+headImage = 'img/projects/interactions2043/interactions-0.png'
+headImageAlt = "Pages 6–7 of the fictional July–August 2043 issue of Interactions. The left page is a Blog@IX article titled “Chromatic Disruption: Eindhoven’s Tech Titans Clash Over AI and Red Perception” by Arganka Yahya and Lenny Martinez, set in three columns with a green pull quote: “Meta decided to strip AI of its ability to perceive the color red.” The right page is a generated image of a red sports car speeding down a wet street between glass towers, with red light streaking past."
 +++
 
 Chromatic Disruption is a news story from a fictional 2043 issue of ACM's _Interactions_ magazine. After a ban on new data centers, Meta wins control of the Dutch National Data Center from the Umbrella Corporation (the one from _Resident Evil_) and strips its AI models of the ability to see red, which is Umbrella's brand color. Autonomous cars entering the Netherlands stop reading traffic lights, and blood tests start being misread. Arganka Yahya and I wrote it using ChatGPT to ask what happens when deployed models are tampered with after society depends on them.
