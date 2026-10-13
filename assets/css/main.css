@@ -5,7 +5,7 @@
   --color-text: black;
   --color-text-muted: color-mix(in srgb, var(--color-text) 70%, white);
   --color-accent: #0013ff;
-
+  --color-test: 
   --font-size-base: 20px;
   --lh-base: 1.5;
 }
