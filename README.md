@@ -35,11 +35,10 @@ Rule overrides for markdownlint. Three defaults are disabled:
 Each section has an archetype in `archetypes/` that pre-fills the front matter. New files start as drafts: set `draft = false` to publish, or preview drafts with `hugo server -D`.
 
 ```sh
-hugo new news/2026-10-09-short-slug.md       # news update: date + a sentence or two of Markdown
 hugo new projects/my-project-name.md         # work project: title, subtitle, description, head image
 ```
 
-- **News** items have no page of their own; they're listed on `/news/` and the latest 3 show on the home page. Prefix filenames with the date so they sort in order.
+- **News** items aren't pages: add an entry to `data/news.toml` with a `date` and a Markdown `body` (newest first; set `draft = true` to hide one). They're listed on `/news/` and the latest 3 show on the home page.
 - **Publications** aren't pages: add an entry to `data/publications.toml` (newest first; the fields are listed at the top of that file). `layouts/publications.html` renders them on `/publications/`, bolding my name and adding the "and" before the last author.
 - **Projects** use `subtitle` for that line, e.g. `'design fiction, 2023'`.
 

@@ -1,10 +1,14 @@
+{{/* Takes a list of entries from data/news.toml. */}}
 <ol class="news">
   {{ range . }}
+    {{ $date := time.AsTime .date }}
     <li>
-      <time class="meta" datetime="{{ .Date.Format "2006-01-02" }}">
-        {{- .Date.Format "Jan 2, 2006" -}}
+      <time class="meta" datetime="{{ $date.Format "2006-01-02" }}">
+        {{- $date.Format "Jan 2, 2006" -}}
       </time>
-      <div class="news-body">{{ .Content }}</div>
+      <div class="news-body">
+        {{ site.Home.RenderString (dict "display" "block") .body }}
+      </div>
     </li>
   {{ end }}
 </ol>

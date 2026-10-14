@@ -1,0 +1,8 @@
+{{/* Published entries from data/news.toml, newest first. */}}
+{{ $items := slice }}
+{{ range site.Data.news.item }}
+  {{ if not .draft }}
+    {{ $items = $items | append . }}
+  {{ end }}
+{{ end }}
+{{ return sort $items "date" "desc" }}

@@ -1,0 +1,28 @@
+# News, listed on /news/ and (latest 3) on the home page, sorted by date.
+# Keep entries newest first so the file reads in the same order as the site.
+#
+# Fields:
+#   date   (required) 'YYYY-MM-DD', when it happened (future dates are fine)
+#   body   (required) a sentence or two of Markdown
+#   draft  optional, set to true to hide an entry without deleting it
+
+[[item]]
+date = '2026-10-12'
+body = 'Presented my research at the [Possible Entanglements Lab](https://poel.polito.it/) at the Polytechnic University of Turin.'
+
+[[item]]
+date = '2025-12-18'
+body = 'Presented my initial work on representational agency at the [_GenAI & Creative Practices_](https://rdt.uva.nl/content/events/2025/12/genai--creative-practices-conference.html) conference at the University of Amsterdam.'
+
+[[item]]
+date = '2025-11-25'
+body = 'Presented my PhD work at the first annual [_GT Human-centered AI Day_](https://gt-hcai.github.io/hcai-annual-event-2025/) at Sorbonne Université.'
+
+[[item]]
+date = '2025-04-28'
+body = 'Presented our paper on [generative AI in documentary photography](/publications/chi25/) at **ACM CHI 2025** in Yokohama, Japan.'
+
+[[item]]
+date = '2024-03-01'
+draft = true
+body = "Started my PhD at [ISIR](https://www.isir.upmc.fr/), Sorbonne Université. I'm a member of the [HCI Sorbonne](https://hci.isir.upmc.fr/) group."
