@@ -36,12 +36,11 @@ Each section has an archetype in `archetypes/` that pre-fills the front matter. 
 
 ```sh
 hugo new news/2026-10-09-short-slug.md       # news update: date + a sentence or two of Markdown
-hugo new publications/my-paper-name.md       # publication: title, venue, description, head image
 hugo new projects/my-project-name.md         # work project: title, subtitle, description, head image
 ```
 
 - **News** items have no page of their own; they're listed on `/news/` and the latest 3 show on the home page. Prefix filenames with the date so they sort in order.
-- **Publications** use `venue` for the line under the title, e.g. `'CHI 2025'` or `'Under review'`.
+- **Publications** aren't pages: add an entry to `data/publications.toml` (newest first; the fields are listed at the top of that file). `layouts/publications.html` renders them on `/publications/`, bolding my name and adding the "and" before the last author.
 - **Projects** use `subtitle` for that line, e.g. `'design fiction, 2023'`.
 
 Lists are sorted by `date`, so set it to when the thing happened, not when the file was created.

@@ -235,3 +235,37 @@ hgroup {
   font-style: normal;
   margin-bottom: 0;
 }
+
+/* Publications (data/publications.toml, layouts/publications.html) */
+
+.pub {
+  margin-top: 2.5em;
+}
+
+.pub-title {
+  margin: 0 0 0.25em;
+  text-wrap: pretty;
+}
+
+.pub-authors,
+.pub-venue {
+  margin-bottom: 0;
+}
+
+.pub-venue {
+  font-style: italic;
+  color: var(--color-text-muted);
+}
+
+.pub-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 1em;
+  margin: 0.25em 0 0;
+  padding: 0;
+  list-style: none;
+
+  & li {
+    margin: 0;
+  }
+}
