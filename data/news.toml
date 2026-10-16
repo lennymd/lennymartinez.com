@@ -19,6 +19,10 @@ date = '2025-11-25'
 body = 'Presented my PhD work at the first annual [_GT Human-centered AI Day_](https://gt-hcai.github.io/hcai-annual-event-2025/) at Sorbonne Université.'
 
 [[item]]
+date = '2025-06-16'
+body = 'Student volunteer for the 9th **Summer School on Computational Interaction**, held at Sorbonne Université.'
+
+[[item]]
 date = '2025-04-28'
 body = 'Presented our paper on [generative AI in documentary photography](/publications/chi25/) at **ACM CHI 2025** in Yokohama, Japan.'
 
